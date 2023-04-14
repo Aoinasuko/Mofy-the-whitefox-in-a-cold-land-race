@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseArtilleryBuilding">
+    <defName>Mofy_SmartMortar</defName>
+    <label>Mofy Smart Mortar</label>
+    <description>This weapon is filled with processed mofu stones and rained down in large quantities from the sky. Many small explosions can effectively damage enemy forces.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Mofy/Build/Mortar/Mortar_Base</texPath>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <rect>(0.38,0.2,0.56375,0.8)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+      <shadowData>
+        <offset>(-0.13,-0.87,-0.1)</offset>
+        <volume>(0.5,0.4,1.05)</volume>
+      </shadowData>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <costList>
+      <Steel>75</Steel>
+      <Mofy_MofuStone>75</Mofy_MofuStone>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Ammunition mofu stone</fuelLabel>
+        <fuelGizmoLabel>Remaining mofu stone</fuelGizmoLabel>
+        <outOfFuelMessage>Needs new mofu stone</outOfFuelMessage>
+        <fuelFilter><thingDefs><li>Mofy_MofuStone</li></thingDefs></fuelFilter>
+        <fuelCapacity>20</fuelCapacity>
+        <fuelMultiplier>1</fuelMultiplier>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+        <autoRefuelPercent>0</autoRefuelPercent>
+        <fuelIconPath>Mofy/Thing/MofuStone/MofuStone</fuelIconPath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+      <turretGunDef>Mofy_Artillery_SmartMortar</turretGunDef>
+      <buildingTags>
+        <li>Artillery_BaseDestroyer</li>
+        <li>Artillery_MannedMortar</li>
+      </buildingTags>
+    </building>
+    <designationCategory>BEPFT_Building</designationCategory>
+    <uiIconPath>Mofy/Build/Mortar/Mortar_Icon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
+    <researchPrerequisites Inherit="False">
+      <li>Mofy_SmartMortar</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseArtilleryWeapon">
+    <defName>Mofy_Artillery_SmartMortar</defName>
+    <label>Mofy SmartMortar</label>
+    <description>It sends mofu stones flying and causes many small explosions.</description>
+    <recoilPower>3</recoilPower>
+    <graphicData>
+      <texPath>Mofy/Build/Mortar/Mortar_Top</texPath>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <weaponTags>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Mofy_SmartMortar_Bomb</defaultProjectile>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>2.0</warmupTime>
+        <forcedMissRadius>3</forcedMissRadius>
+        <forcedMissRadiusClassicMortars>6</forcedMissRadiusClassicMortars>
+        <isMortar>true</isMortar>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>9.9</minRange>
+        <range>500</range>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>Mortar_LaunchA</soundCast>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Mofy_SmartMortar_Bomb</defName>
+    <label>SmartMortar Bomb</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Mofy/Build/Mortar/Mortar_Bomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>2.9</explosionRadius>
+      <speed>18</speed>
+      <damageAmountBase>12</damageAmountBase>
+      <arcHeightFactor>0.8</arcHeightFactor>
+      <shadowSize>1.2</shadowSize>
+      <soundExplode>Explosion_Rocket</soundExplode>
+    </projectile>
+  </ThingDef>
+
+</Defs>

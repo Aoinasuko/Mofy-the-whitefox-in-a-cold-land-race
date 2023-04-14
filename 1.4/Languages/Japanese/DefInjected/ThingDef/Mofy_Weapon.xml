@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_SmallBomb.label>Mofy 小型爆弾</Mofy_SmallBomb.label>
+  <Mofy_SmallBomb.description>シンプルな構造の小型の爆弾です.\n着地した瞬間に,爆発を起こします.</Mofy_SmallBomb.description>
+  <Mofy_SmallBomb.verbs.0.label>爆弾を投げる</Mofy_SmallBomb.verbs.0.label>
+
+  <Mofy_Bomb.label>Mofy 小型爆弾</Mofy_Bomb.label>
+
+  <Mofy_FreezeBomb.label>Mofy 冷凍爆弾</Mofy_FreezeBomb.label>
+  <Mofy_FreezeBomb.description>短時間の間空間にとどまる凍結ガスを封じ込めた爆弾です.\n範囲内の生物を素早く凍らせます.\nただし,メカノイドには効果が薄いです.</Mofy_FreezeBomb.description>
+  <Mofy_FreezeBomb.verbs.0.label>爆弾を投げる</Mofy_FreezeBomb.verbs.0.label>
+
+  <Mofy_FreezeBomb_Bomb.label>Mofy 冷凍爆弾</Mofy_FreezeBomb_Bomb.label>
+  <Mofy_FreezeGas.label>凍結ガス</Mofy_FreezeGas.label>
+
+  <Mofy_IceGrave.label>アイスグレーブ</Mofy_IceGrave.label>
+  <Mofy_IceGrave.description>生物が凍結ガスによって凍りついた状態です.</Mofy_IceGrave.description>
+
+
+</LanguageData>

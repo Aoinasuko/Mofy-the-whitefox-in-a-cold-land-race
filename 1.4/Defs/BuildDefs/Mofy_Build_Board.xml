@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Mofy_BlacksmithInstructionBoard</defName>
+    <label>Mofy Blacksmith Instruction Board</label>
+    <description>This board is used to write down notes on how to perform blacksmithing. When placed, it periodically buffs creatures within range.\n(Line of sight must be present.)\n\nDuring the buff's duration of effect, when an item with the concept of quality is created in the surrounding area, its quality may increase by one level.\n(This may allow for the creation of items of Legendary quality.)\n\nIt will also create items of at least Good quality for the duration of the effect.</description>
+    <graphicData>
+      <texPath>Mofy/Build/Board/Board</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>75</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.75</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.25</Flammability>
+      <Mass>5</Mass>
+      <Beauty>20</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <designationCategory>BEPFT_Building</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <surfaceType>Item</surfaceType>
+    <tickerType>Normal</tickerType>
+    <specialDisplayRadius>10.9</specialDisplayRadius>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <comps>
+      <li Class="Mofy_Race.CompProperties_AddHediff">
+        <Range>10.9</Range>
+        <Hediff>Mofy_BlacksmithInstruction</Hediff>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Mofy_BlacksmithInstruction</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

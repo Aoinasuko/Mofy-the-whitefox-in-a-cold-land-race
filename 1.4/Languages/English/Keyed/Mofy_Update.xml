@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<Mofy.Update.Title>Mofy Update Log</Mofy.Update.Title>
+
+<Mofy.Update.label>
+2023/04/09(0.1.4.0):
+*Lowered the cost of some research studies.
+
+*Added new research
+
+*Added new buildings
+
+*New weapons have been added.
+All B.E.P races, including LittleFairy, can now be equipped.
+
+2023/03/27(0.1.3.0):
+*Fixed some graphics
+
+*Separated FacialAnimation definitions into separate mods
+To reduce the load at startup, I have separated FacialAnimation images and definitions into separate mods.
+Please subscribe from the collection.
+
+2023/03/05(0.1.2.0):
+*Mofy's now appear dressed according to their roles
+
+2023/01/31(0.1.1.3):
+*Research race restrictions have been removed
+
+*Added new equipment
+Instead of adding the equipment of another race, this mod is now added by itself
+Please note that you can no longer wear clothes of other races
+
+*Armor values of various equipment have been adjusted
+
+*New "Mofy Milkcocktail" has been added
+
+*Some research has been removed
+
+2023/01/30(0.1.1.2):
+*Various statuses are no longer corrected based on age
+
+2023/01/29(0.1.1.1):
+*Increased the number of hairstyle types to 8
+
+2023/01/15(0.1.1.0):
+*Architect categories have been merged
+
+2023/01/08(0.1.0.8):
+*The setting was changed so that the gene of Biotech's appearance system cannot be adapted
+
+2023/01/06(0.1.0.7):
+*Corrected ear layer position
+
+*Support for the function of fertility change through Biotech linkage of HAR
+
+2022/11/23(0.1.0.4):
+*Skin and hair colors are no longer changed by genes
+
+*Adjusted behavior of source code
+
+2022/11/11(0.1.0.3):
+*Body shape graphics and costume graphics have been re-created
+
+*Facial Animation elements have been adjusted.
+Some data has been adjusted by re-creating graphics.
+Some parts have been deleted. Please use mods such as CharacterEditer to correct them.
+
+2022/10/31(0.1.0.2):
+*The specification that made the face unique has been eliminated.
+For existing saved data, please use CharacterEditer or other mods to correct this issue.
+
+*Add Update Log(This Window)
+</Mofy.Update.label>
+
+</LanguageData>

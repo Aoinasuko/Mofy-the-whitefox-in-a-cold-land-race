@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Mofy_MofuHail</defName>
+    <label>MofuHail</label>
+    <description>This material is made from a combination of MofyStone and ice. Because it is not a perfect stone material, it is somewhat susceptible to fire, but it is a very good insulator. It is also suitable for crafts because of its beauty.</description>
+    <graphicData>
+      <texPath>Mofy/Thing/MofuHail</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>4.4</MarketValue>
+      <Beauty>-1</Beauty>
+      <Mass>1.1</Mass>
+      <StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>1.5</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.75</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.75</BluntDamageMultiplier>
+    </statBases>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.001</commonality>
+      <color>(170,240,255)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>3</MaxHitPoints>
+        <MarketValue>1.5</MarketValue>
+        <Flammability>0.1</Flammability>
+        <WorkToBuild>1.5</WorkToBuild>
+        <WorkToMake>1.5</WorkToMake>
+        <BedRestEffectiveness>0.95</BedRestEffectiveness>
+        <DoorOpenSpeed>0.9</DoorOpenSpeed>
+        <MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
+        <Beauty>3.5</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>Mofy_FlagstoneMofuhail</defName>
+    <label>mofuhail flagstone</label>
+    <color>(170,240,255)</color>
+    <costList>
+      <Mofy_MofuHail>4</Mofy_MofuHail>
+    </costList>
+    <researchPrerequisites>
+      <li>Mofy_ColdMaterials</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>Mofy_TileMofuhail</defName>
+    <label>mofuhail tile</label>
+    <color>(170,240,255)</color>
+    <costList>
+      <Mofy_MofuHail>4</Mofy_MofuHail>
+    </costList>
+    <researchPrerequisites>
+      <li>Mofy_ColdMaterials</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Mofy_MofuStone</defName>
+    <label>MofuStone</label>
+    <description>It is a white stone that Mofy drop. It is sturdy and easy to handle. It is customary for the Mofy community to take the bones of dead Mofy or dead Morphy bodies and process them into this stone, They carry them around to remember those who have died.</description>
+    <graphicData>
+      <texPath>Mofy/Thing/MofuStone</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <MarketValue>2.2</MarketValue>
+      <Beauty>-5</Beauty>
+      <Mass>0.8</Mass>
+      <StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.25</StuffPower_Armor_Heat>
+      <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.25</BluntDamageMultiplier>
+    </statBases>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0.005</commonality>
+      <color>(220,220,220)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2.5</MaxHitPoints>
+        <MarketValue>0.75</MarketValue>
+        <Flammability>0</Flammability>
+        <WorkToBuild>1.2</WorkToBuild>
+        <WorkToMake>0.9</WorkToMake>
+        <DoorOpenSpeed>0.75</DoorOpenSpeed>
+        <BedRestEffectiveness>0.95</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Mofy_PreMofuStone</defName>
+    <label>Pre MofuStone</label>
+    <description>These are the ingredients for MofuStone, made from the bones of a Mofy or Morphy. By overheating with any stone material, you can get a MofuStone.</description>
+    <graphicData>
+      <texPath>Mofy/Thing/PreMofuStone</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1.5</MarketValue>
+      <Beauty>-10</Beauty>
+      <Mass>0.5</Mass>
+    </statBases>
+    <tradeability>None</tradeability>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <RecipeDef>
+    <defName>Make_MofuStone</defName>
+    <label>make MofuStone</label>
+    <description>Pre MofuStone and stone are melted in high heat to create the MofuStone.</description>
+    <jobString>making MofuStone.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <researchPrerequisite>Mofy_Knowledge</researchPrerequisite>
+    <recipeUsers>
+      <li>Campfire</li>
+      <li>ElectricSmelter</li>
+      <li>Mofy_CraftTable</li>
+    </recipeUsers>
+    <uiIconThing>Mofy_MofuStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mofy_PreMofuStone</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Mofy_PreMofuStone</li>
+      </thingDefs>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Mofy_MofuStone>20</Mofy_MofuStone>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Make_MofuStoneBulk_Bulk</defName>
+    <label>make MofuStone x5</label>
+    <description>Pre MofuStone and stone are melted in high heat to create the MofuStone.</description>
+    <jobString>making MofuStone.</jobString>
+    <workAmount>2500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <researchPrerequisite>Mofy_Knowledge</researchPrerequisite>
+    <recipeUsers>
+      <li>Campfire</li>
+      <li>ElectricSmelter</li>
+      <li>Mofy_CraftTable</li>
+    </recipeUsers>
+    <uiIconThing>Mofy_MofuStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mofy_PreMofuStone</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Mofy_PreMofuStone</li>
+      </thingDefs>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Mofy_MofuStone>100</Mofy_MofuStone>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_MofuStone_Alternative</defName>
+    <label>make MofuStone(Alternative)</label>
+    <description>It creates a pseudo MofuStone without the Mofy corpse. It takes more time than usual and also costs more.</description>
+    <jobString>making MofuStone.</jobString>
+    <workAmount>1500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <researchPrerequisite>Mofy_AlternatePlan</researchPrerequisite>
+    <recipeUsers>
+      <li>Campfire</li>
+      <li>ElectricSmelter</li>
+      <li>Mofy_CraftTable</li>
+    </recipeUsers>
+    <uiIconThing>Mofy_MofuStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Mofy_MofuStone>20</Mofy_MofuStone>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_MofuStone_Alternative_Bulk</defName>
+    <label>make MofuStone(Alternative) x5</label>
+    <description>It creates a pseudo MofuStone without the Mofy corpse. It takes more time than usual and also costs more.</description>
+    <jobString>making MofuStone.</jobString>
+    <workAmount>7500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <researchPrerequisite>Mofy_AlternatePlan</researchPrerequisite>
+    <recipeUsers>
+      <li>Campfire</li>
+      <li>ElectricSmelter</li>
+      <li>Mofy_CraftTable</li>
+    </recipeUsers>
+    <uiIconThing>Mofy_MofuStone</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneBlocks</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Mofy_MofuStone>100</Mofy_MofuStone>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_MofuHail</defName>
+    <label>make MofuHail</label>
+    <description>Process MofuStone to create a beautiful MofuHail.</description>
+    <jobString>making MofuStone.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <researchPrerequisite>Mofy_ColdMaterials</researchPrerequisite>
+    <recipeUsers>
+      <li>Mofy_CraftTable</li>
+    </recipeUsers>
+    <uiIconThing>Mofy_MofuHail</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mofy_MofuStone</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Mofy_MofuStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+    <products>
+      <Mofy_MofuHail>10</Mofy_MofuHail>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_MofuHail_Bulk</defName>
+    <label>make MofuHail x5</label>
+    <description>Process MofuStone to create a beautiful MofuHail.</description>
+    <jobString>making MofuStone.</jobString>
+    <workAmount>5000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <researchPrerequisite>Mofy_ColdMaterials</researchPrerequisite>
+    <recipeUsers>
+      <li>Mofy_CraftTable</li>
+    </recipeUsers>
+    <uiIconThing>Mofy_MofuHail</uiIconThing>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mofy_MofuStone</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Mofy_MofuStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+    <products>
+      <Mofy_MofuHail>50</Mofy_MofuHail>
+    </products>
+  </RecipeDef>
+
+</Defs>

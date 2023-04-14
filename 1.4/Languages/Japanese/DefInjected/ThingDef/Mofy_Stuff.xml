@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_MofuHail.label>モフ氷</Mofy_MofuHail.label>
+  <Mofy_MofuHail.description>モフ石を氷と共に加工することによって作成できる,美しさと耐久力を兼ね備えた素材です.\n非常に大きな遮熱性を持っています.</Mofy_MofuHail.description>
+
+  <Mofy_MofuStone.label>モフ石</Mofy_MofuStone.label>
+  <Mofy_MofuStone.description>モフィーが落とす白い石,普通の石より扱いやすく頑丈です.\n死んだモフィーやモーフィの骨と石から作られており,散っていった仲間を忘れないために携帯したり建築物に用いているようです.</Mofy_MofuStone.description>
+
+  <Mofy_PreMofuStone.label>モフ石の元</Mofy_PreMofuStone.label>
+  <Mofy_PreMofuStone.description>モフィ―かモーフィを解体することで入手できる骨です.\nこれと石材を熱することでモフ石を作ることができます.</Mofy_PreMofuStone.description>
+
+
+</LanguageData>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 王国 -->
+	
+	<AlienRace.AlienBackstoryDef Name="Mofy_BaseBackStory_Kingdom" Abstract="True">
+		<bodyTypeMale>Female</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Mofy_Story_Kingdom</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Child_A</defName>
+		<title>Child of the Kingdom's Cook</title>
+		<titleShort>Cook</titleShort>
+		<baseDesc>[PAWN_nameDef] was the child of a cook in the kingdom of Mofy. He learned many ways of cooking from his parents.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Child_B</defName>
+		<title>Child of the Kingdom's Builder</title>
+		<titleShort>Builder</titleShort>
+		<baseDesc>[PAWN_nameDef] was the child of a builder in the kingdom of Mofy. He learned many ways of building from his parents.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Child_C</defName>
+		<title>Child of the Kingdom's Crafter</title>
+		<titleShort>Crafter</titleShort>
+		<baseDesc>[PAWN_nameDef] was the child of a crafter in the kingdom of Mofy. He learned many ways of crafting from his parents.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Child_D</defName>
+		<title>Child of the Kingdom's Doctor</title>
+		<titleShort>Doctor</titleShort>
+		<baseDesc>[PAWN_nameDef] was the child of a doctor in the kingdom of Mofy. He learned many ways of medicine from his parents.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Child_E</defName>
+		<title>Child of the Kingdom's Warrior</title>
+		<titleShort>Warrior</titleShort>
+		<baseDesc>[PAWN_nameDef] was the child of a Warrior in the kingdom of Mofy. He learned many ways of fighting from his parents.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Child_F</defName>
+		<title>Child of the Kingdom's Hunter</title>
+		<titleShort>Hunter</titleShort>
+		<baseDesc>[PAWN_nameDef] was the child of a Warrior in the kingdom of Mofy. He learned many ways of Hunting from his parents.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Child_G</defName>
+		<title>Child of the Kingdom's Noble</title>
+		<titleShort>Noble</titleShort>
+		<baseDesc>[PAWN_nameDef] was the child of a Noble in the kingdom of Mofy. He learned many ways of trading from his parents.</baseDesc>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Mofy_Story_Kingdom</li>
+			<li>Mofy_Story_Kingdom_Noble</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Adult_A</defName>
+		<title>Kingdom's Cook</title>
+		<titleShort>Cook</titleShort>
+		<baseDesc>[PAWN_nameDef] was appointed as a cook and worked hard every day to cook food for the kingdom.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Cooking</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Adult_B</defName>
+		<title>Kingdom's Builder</title>
+		<titleShort>Builder</titleShort>
+		<baseDesc>[PAWN_nameDef] was appointed architect and was involved in the construction of defensive walls and weapons to strengthen the kingdom's defenses.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Adult_C</defName>
+		<title>Kingdom's Crafter</title>
+		<titleShort>Crafter</titleShort>
+		<baseDesc>[PAWN_nameDef] was appointed as a crafter and manufactured weapons for use in the kingdom.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Adult_D</defName>
+		<title>Kingdom's Doctor</title>
+		<titleShort>Doctor</titleShort>
+		<baseDesc>[PAWN_nameDef] was appointed as a doctor and spent most of her time in the kingdom treating the injured.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Medicine</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Adult_E</defName>
+		<title>Kingdom's Warrior</title>
+		<titleShort>Warrior</titleShort>
+		<baseDesc>[PAWN_nameDef] was appointed a warrior and faced the enemy in battle.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Adult_F</defName>
+		<title>Kingdom's Hunter</title>
+		<titleShort>Hunter</titleShort>
+		<baseDesc>[PAWN_nameDef] was assigned as a hunter and hunted animals to secure food.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Kingdom">
+		<defName>Mofy_Kingdom_Adult_G</defName>
+		<title>Kingdom's Noble</title>
+		<titleShort>Noble</titleShort>
+		<baseDesc>[PAWN_nameDef] has been appointed to the nobility. Only a handful of Mofy can hold this position as this is a key role in diplomacy and trade.</baseDesc>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Mofy_Story_Kingdom</li>
+			<li>Mofy_Story_Kingdom_Noble</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<!-- 奴隷 -->
+	
+	<AlienRace.AlienBackstoryDef Name="Mofy_BaseBackStory_Slave" Abstract="True">
+		<bodyTypeMale>Female</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>Mofy_Story_Slave</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Slave">
+		<defName>Mofy_Slave_Child_A</defName>
+		<title>Farmed Mofy</title>
+		<titleShort>Farmed</titleShort>
+		<baseDesc>[PAWN_nameDef] was farmed Mofy as a labor and food source.</baseDesc>
+		<slot>Childhood</slot>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Slave">
+		<defName>Mofy_Slave_Child_B</defName>
+		<title>Abandoned Mofy</title>
+		<titleShort>Abandoned</titleShort>
+		<baseDesc>[PAWN_nameDef] was a Mofy that was abandoned for one reason or another.</baseDesc>
+		<slot>Childhood</slot>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Slave">
+		<defName>Mofy_Slave_Adult_A</defName>
+		<title>Cattle</title>
+		<titleShort>Cattle</titleShort>
+		<baseDesc>[PAWN_nameDef] was spending her days waiting to be sold in the slavers' market as food for a different race of people.</baseDesc>
+		<slot>Adulthood</slot>
+		<workDisables>Commoner, Social, Firefighting</workDisables>  
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef ParentName="Mofy_BaseBackStory_Slave">
+		<defName>Mofy_Slave_Adult_B</defName>
+		<title>Worker</title>
+		<titleShort>Worker</titleShort>
+		<baseDesc>[PAWN_nameDef] was sold to slavers as a slave to perform labor.</baseDesc>
+		<slot>Adulthood</slot>
+		<workDisables>Social</workDisables>
+		<skillGains>
+			<li>
+				<key>Animals</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>2</value>
+			</li>
+			<li>
+				<key>Cooking</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	
+</Defs>

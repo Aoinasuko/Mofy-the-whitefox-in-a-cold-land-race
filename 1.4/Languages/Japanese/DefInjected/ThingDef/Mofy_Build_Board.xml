@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_BlacksmithInstructionBoard.label>Mofy 鍛冶指南ボード</Mofy_BlacksmithInstructionBoard.label>
+  <Mofy_BlacksmithInstructionBoard.description>鍛冶をする上での注意点を書き留めているボードです.\n\n視界に入れていると,特殊なバフを与えてくれます.\n\n効果時間中に品質の要素があるアイテムを作成した時,最低でも良品のアイテムを制作します. また,低確率で品質が一段階上昇したアイテムを制作してくれることがあります.</Mofy_BlacksmithInstructionBoard.description>
+
+</LanguageData>

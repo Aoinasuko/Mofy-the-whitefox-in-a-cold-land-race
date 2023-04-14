@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- 武器の追加 -->
+    <!-- weaponList追加 -->
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="LittleFairy_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "LittleFairy_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "LittleFairy_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Mofy_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Mofy_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Mofy_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Resurreviewy_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Resurreviewy_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Resurreviewy_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Glassy_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Glassy_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Glassy_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Sweety_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Sweety_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "Sweety_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="LegacyFairy_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "LegacyFairy_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "LegacyFairy_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="MagiaPlant_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="MagiaPlant_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="MagiaPlant_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Forgotty_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Forgotty_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Forgotty_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Maddy_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Maddy_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <success>Invert</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Maddy_Pawn"]/alienRace/raceRestriction</xpath>
+          <value>
+            <weaponList>
+            </weaponList>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+    <!-- 武器の種類追加 -->
+    <Operation Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationTest">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "LittleFairy_Pawn" or defName = "Resurreviewy_Pawn" or defName = "Glassy_Pawn" or defName = "Sweety_Pawn" or defName = "LegacyFairy_Pawn" or defName="MagiaPlant_Pawn" or defName="Forgotty_Pawn" or defName="Maddy_Pawn"]</xpath>
+          <success>Normal</success>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName = "LittleFairy_Pawn" or defName = "Resurreviewy_Pawn" or defName = "Glassy_Pawn" or defName = "Sweety_Pawn" or defName = "LegacyFairy_Pawn" or defName="MagiaPlant_Pawn" or defName="Forgotty_Pawn" or defName="Maddy_Pawn"]/alienRace/raceRestriction/weaponList</xpath>
+          <value>
+            <li>Mofy_Pickaxe</li>
+            <li>Mofy_Axe</li>
+            <li>Mofy_BlacksmithHammer</li>
+            <li>Mofy_Knife</li>
+          </value>
+        </li>
+      </operations>
+    </Operation>
+    
+</Patch>

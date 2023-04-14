@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <HediffDef>
+    <defName>Mofy_Freeze</defName>
+    <hediffClass>Mofy_Race.Hediff_Freeze</hediffClass>
+    <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    <isBad>true</isBad>
+    <label>Freeze</label>
+    <description>The intense cold air has caused the body to be on the verge of freezing. If you are exposed to cold air above your limit, your body will freeze.</description>
+    <maxSeverity>99999</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-50.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Mofy_BlacksmithInstruction</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 1.0, 0.6)</defaultLabelColor>
+    <isBad>false</isBad>
+    <label>Blacksmith Instruction</label>
+    <description>The state is taking care of the work by looking at the forging instructions. During the activation of this state, there is a low probability that the item will be created one step higher in quality than usual.\n\nIt will also create items of at least Good quality for the duration of the effect.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>2500</min>
+          <max>2500</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_FreezeAttachment.label>Mofy 冷凍アタッチメント</Mofy_FreezeAttachment.label>
+  <Mofy_FreezeAttachment.description>電気を通すと,視界が通っている付近の空間に冷気ガスを放出します.\n冷気ガスは範囲内の生物を凍らせます.</Mofy_FreezeAttachment.description>
+
+  <Mofy_ShotAttachment.label>Mofy ショットアタッチメント</Mofy_ShotAttachment.label>
+  <Mofy_ShotAttachment.description>壁に埋め込むことのできるタレットです. 攻撃範囲は狭いものの素早く敵を攻撃することが出来ます.</Mofy_ShotAttachment.description>
+  <Mofy_ShotAttachment.comps.CompRefuelable.fuelGizmoLabel>銃身耐久力</Mofy_ShotAttachment.comps.CompRefuelable.fuelGizmoLabel>
+  <Mofy_ShotAttachment.comps.CompRefuelable.fuelLabel>銃身耐久力</Mofy_ShotAttachment.comps.CompRefuelable.fuelLabel>
+  <Mofy_ShotAttachment.comps.CompRefuelable.outOfFuelMessage>替え銃身が必要</Mofy_ShotAttachment.comps.CompRefuelable.outOfFuelMessage>
+
+  <Mofy_ShotAttachment_Gun.label>Mofy ショットアタッチメントガン</Mofy_ShotAttachment_Gun.label>
+  <Mofy_ShotAttachment_Gun.description>ショットアタッチメントに備わっている銃.</Mofy_ShotAttachment_Gun.description>
+
+  <Mofy_ShotAttachment_Bullet.label>Mofy ショットアタッチメントバレット</Mofy_ShotAttachment_Bullet.label>
+
+</LanguageData>

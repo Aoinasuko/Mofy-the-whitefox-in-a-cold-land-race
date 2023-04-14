@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_SmartMortar.label>Mofy スマート迫撃砲</Mofy_SmartMortar.label>
+  <Mofy_SmartMortar.description>砲弾の材料としてモフ石を利用した迫撃砲です. 一度に10発もの小型榴弾を発射し,広い範囲に小さなダメージを与えることが出来ます.</Mofy_SmartMortar.description>
+  <Mofy_SmartMortar.comps.CompRefuelable.fuelGizmoLabel>モフ石残数</Mofy_SmartMortar.comps.CompRefuelable.fuelGizmoLabel>
+  <Mofy_SmartMortar.comps.CompRefuelable.fuelLabel>モフ石</Mofy_SmartMortar.comps.CompRefuelable.fuelLabel>
+  <Mofy_SmartMortar.comps.CompRefuelable.outOfFuelMessage>モフ石が必要</Mofy_SmartMortar.comps.CompRefuelable.outOfFuelMessage>
+
+  <Mofy_Artillery_SmartMortar.label>Mofy スマート迫撃砲</Mofy_Artillery_SmartMortar.label>
+  <Mofy_Artillery_SmartMortar.description>広い範囲に小さなダメージを与えることが出来る迫撃砲.</Mofy_Artillery_SmartMortar.description>
+
+  <Mofy_SmartMortar_Bomb.label>スマート迫撃砲弾</Mofy_SmartMortar_Bomb.label>
+
+</LanguageData>

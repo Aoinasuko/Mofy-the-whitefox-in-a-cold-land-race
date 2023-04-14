@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_Freeze.label>凍結</Mofy_Freeze.label>
+  <Mofy_Freeze.description>強烈な冷気により,体が凍りそうな状態です.\n限界以上の冷気を浴びた場合,体が凍りつき即死してしまいます.</Mofy_Freeze.description>
+
+  <Mofy_BlacksmithInstruction.label>鍛冶指南ボード</Mofy_BlacksmithInstruction.label>
+  <Mofy_BlacksmithInstruction.description>鍛冶指南ボードを見て,作業に気をつけている状態です.\n\n効果時間中に品質の要素があるアイテムを作成した時,最低でも良品のアイテムを制作します. また,低確率で品質が一段階上昇したアイテムを制作してくれることがあります.</Mofy_BlacksmithInstruction.description>
+
+</LanguageData>

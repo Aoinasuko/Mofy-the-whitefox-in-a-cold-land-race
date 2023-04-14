@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchTabDef>
+		<defName>Mofy_Research</defName>
+		<label>Mofy</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_Knowledge</defName>
+	    <label>Knowledge</label>
+	    <description>You will learn about Mofy and be able to create basic weapons and materials that Mofy's use in building.</description>
+	    <baseCost>500</baseCost>
+	    <techLevel>Neolithic</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <researchViewX>0</researchViewX>
+	    <researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_LittleBlacksmith</defName>
+	    <label>Little Blacksmith</label>
+	    <description>It will be possible to create various tools adapted to small-sized races.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Medieval</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Mofy_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>1</researchViewX>
+	    <researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_BlacksmithInstruction</defName>
+	    <label>Blacksmith Instruction</label>
+	    <description>It will be possible to create an instruction board that will raise the quality of construction and item production to a higher level.</description>
+	    <baseCost>3000</baseCost>
+	    <techLevel>Medieval</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Mofy_LittleBlacksmith</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_AlternatePlan</defName>
+	    <label>Alternate Plan</label>
+	    <description>Learn how you can create a Mofu Stone with certain materials as an emergency alternative.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Medieval</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Mofy_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>1</researchViewX>
+	    <researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_ColdMaterials</defName>
+	    <label>Cold Materials</label>
+	    <description>Mofu Stone and high density ice will be combined to create Mofu Hail which can be used as a beautiful stone material.</description>
+	    <baseCost>2000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Electricity</li>
+	      <li>Mofy_AlternatePlan</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_ExplosiveDemolition</defName>
+	    <label>Explosive Demolition</label>
+	    <description>Enables the creation of simple structure, anti-building bombs.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Medieval</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Mofy_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>2</researchViewX>
+	    <researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_SmartMortar</defName>
+	    <label>Smart Mortar</label>
+	    <description>Mofu stones can be used to create mortars that can bombard large areas.</description>
+	    <baseCost>1000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Mortars</li>
+	      <li>Mofy_ExplosiveDemolition</li>
+	    </prerequisites>
+	    <researchViewX>3</researchViewX>
+	    <researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_FreezeBomb</defName>
+	    <label>Freeze Bomb</label>
+	    <description>It will be able to create bombs that disperse very cold gases, which are harmful to living organisms. Exposure to too much gas at one time causes the whole body to freeze.</description>
+	    <baseCost>2000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Mofy_ColdMaterials</li>
+	      <li>Mofy_ExplosiveDemolition</li>
+	    </prerequisites>
+	    <researchViewX>3</researchViewX>
+	    <researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_Costumes</defName>
+	    <label>Costumes</label>
+	    <description>It will allow you to create Mofy outfits.</description>
+	    <baseCost>500</baseCost>
+	    <techLevel>Medieval</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Mofy_Knowledge</li>
+	    </prerequisites>
+	    <researchViewX>1</researchViewX>
+	    <researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+	    <defName>Mofy_WallAttachment</defName>
+	    <label>Wall Attachment</label>
+	    <description>It will be possible to create attachments that can be mounted on the surrounding walls to achieve the desired effect. All attachments are indiscriminately effective and should be handled with care.</description>
+	    <baseCost>2000</baseCost>
+	    <techLevel>Industrial</techLevel>
+	    <tab>
+	      <li>Mofy_Research</li>
+	    </tab>
+	    <prerequisites>
+	      <li>Mofy_ColdMaterials</li>
+	    </prerequisites>
+	    <researchViewX>3</researchViewX>
+	    <researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

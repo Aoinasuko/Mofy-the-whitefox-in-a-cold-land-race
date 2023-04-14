@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Mofy_Pawn</defName>
+		<label>Mofy</label>
+		<description>Mofy are a race with fox-like white ears and tails. Once developed by humans as a "labor force that could also serve as food" Mofy have a variety of useful traits.\n\nNutritious milk is available from mature individuals. The milk, when drunk, temporarily boosts the immune system.\n\nIn addition, the meat is not very tasty and familiar to humans, but there is no problem in eating it.\n\nThey can build, craft, and mine quickly, but it takes them a long time to learn the rest of the things they are not good at.\n\nSome Mofy's now live quietly in cold lands or deep underground in their kingdoms.</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.1</maleGenderProbability>
+				<immuneToAge>true</immuneToAge>
+				<canLayDown>true</canLayDown>
+				<maxDamageForSocialfight>3</maxDamageForSocialfight>
+				<humanRecipeImport>true</humanRecipeImport>
+				<minAgeForAdulthood>5</minAgeForAdulthood>
+				<immuneToXenophobia>true</immuneToXenophobia>
+				<allowHumanBios>false</allowHumanBios>
+				<lovinIntervalHoursFromAge>
+					<points>
+						<li>(4, 5.5)</li>
+						<li>(6, 5.0)</li>
+						<li>(40, 5.0)</li>
+						<li>(50, 10.0)</li>
+					</points>
+				</lovinIntervalHoursFromAge>
+				<disallowedTraits>
+					<li>
+						<defName>Beauty</defName>
+						<degree>-1</degree>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>-2</degree>
+					</li>
+					<li>
+						<defName>Beauty</defName>
+						<degree>2</degree>
+					</li>
+					<li>
+						<defName>DislikesMen</defName>
+					</li>
+					<li>
+						<defName>DislikesWomen</defName>
+					</li>
+					<li>
+						<defName>AnnoyingVoice</defName>
+					</li>
+					<li>
+						<defName>CreepyBreathing</defName>
+					</li>
+				</disallowedTraits>
+				<alienPartGenerator>
+					<oldHairAgeRange>10000~99999</oldHairAgeRange>
+					<oldHairColorGen Class="ColorGenerator_Options">
+						<options>
+							<li>
+								<weight>1</weight>
+								<only>RGBA(1.0,1.0,1.0,1)</only>
+							</li>
+						</options>
+					</oldHairColorGen>
+					<headTypes Inherit="False">
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<headOffset>(-0.1, -0.186)</headOffset>
+					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.97,0.92,0.79,1)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(1.0,0.85,0.76,1)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(0.94,0.69,0.72,1)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,104,104,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,189,54,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,248,137,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(169,255,172,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(153,255,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(154,164,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(223,181,255,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(172,90,60,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(255,250,240,255)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(233,205,113,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(1.0,1.0,1.0,1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<!-- 子供と大人体型の耳 -->
+						<li>
+							<path>Mofy/Race/Ear/Adult/Left/LEar</path>
+							<bodytypeGraphics>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">Mofy/Race/Ear/None/None</Baby>
+							</bodytypeGraphics>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>true</layerInvert>
+							<drawSize>1</drawSize>
+							<colorChannel>hair</colorChannel>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<west>
+									<layerOffset>-0.27</layerOffset>
+								</west>
+								<south>
+									<layerOffset>-0.27</layerOffset>
+								</south>
+								<north>
+								</north>
+								<east>
+									<layerOffset>-1.0</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Mofy/Race/Ear/Adult/Right/REar</path>
+							<bodytypeGraphics>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">Mofy/Race/Ear/None/None</Baby>
+							</bodytypeGraphics>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>true</layerInvert>
+							<drawSize>1</drawSize>
+							<colorChannel>hair</colorChannel>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<west>
+									<layerOffset>-1.0</layerOffset>
+								</west>
+								<south>
+									<layerOffset>-0.27</layerOffset>
+								</south>
+								<north>
+								</north>
+								<east>
+									<layerOffset>-0.27</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<!-- 赤ちゃん体型の耳 -->
+						<li>
+							<path>Mofy/Race/Ear/None/None</path>
+							<bodytypeGraphics>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">Mofy/Race/Ear/Baby/Left/LEar</Baby>
+							</bodytypeGraphics>
+							<bodyPartLabel>left ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>true</layerInvert>
+							<drawSize>1</drawSize>
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<west>
+									<layerOffset>-0.27</layerOffset>
+								</west>
+								<south>
+									<layerOffset>-0.27</layerOffset>
+								</south>
+								<north>
+								</north>
+								<east>
+									<layerOffset>-1.0</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Mofy/Race/Ear/None/None</path>
+							<bodytypeGraphics>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">Mofy/Race/Ear/Baby/Right/REar</Baby>
+							</bodytypeGraphics>
+							<bodyPartLabel>right ear</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<layerInvert>true</layerInvert>
+							<drawSize>1</drawSize>
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>true</drawnInBed>
+							<drawnDesiccated>false</drawnDesiccated>
+							<offsets>
+								<west>
+									<layerOffset>-1.0</layerOffset>
+								</west>
+								<south>
+									<layerOffset>-0.27</layerOffset>
+								</south>
+								<north>
+								</north>
+								<east>
+									<layerOffset>-0.27</layerOffset>
+								</east>
+							</offsets>
+						</li>
+						<li>
+							<path>Mofy/Race/Tail/Tail</path>
+							<bodyPart>Mofy_Tail</bodyPart>
+							<inFrontOfBody>false</inFrontOfBody>
+							<drawSize>1</drawSize>
+							<colorChannel>hair</colorChannel>
+							<drawnInBed>false</drawnInBed>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+				<reproduction>
+					<!-- 男の生殖率 -->
+					<maleFertilityAgeFactor>
+						<points>
+							<li>(3, 0)</li>
+							<li>(5, 1)</li>
+							<li>(40, 1)</li>
+							<li>(45, 0)</li>
+						</points>
+					</maleFertilityAgeFactor>
+					<!-- 女の生殖率 -->
+					<femaleFertilityAgeFactor>
+						<points>
+							<li>(3, 0)</li>
+							<li>(5, 1)</li>
+							<li>(40, 1)</li>
+							<li>(45, 0)</li>
+						</points>
+					</femaleFertilityAgeFactor>
+				</reproduction>
+				<growthAges>
+					<li>1</li>
+					<li>3</li>
+					<li>5</li>
+				</growthAges>
+			</generalSettings>
+			<graphicPaths>
+				<head>Mofy/Race/Head/Average_Normal</head>
+				<body>Mofy/Race/Body/</body>
+				<skeleton>Mofy/Race/Bone/Bone</skeleton>
+				<skull>Mofy/Race/HeadBone/HeadBone</skull>
+			</graphicPaths>
+			<relationSettings>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierSibling>1</relationChanceModifierSibling>
+			</relationSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>Mofy_SimpleCloth</li>
+					<li>Mofy_BlindfoldandGag</li>
+					<li>Mofy_Blindfold</li>
+					<li>Mofy_SimpleCollor</li>
+					<li>Mofy_SlaveStrap</li>
+					<li>Mofy_SimpleArmor</li>
+					<li>Mofy_MaidBand</li>
+					<li>Mofy_MaidCloth</li>
+					<li>Mofy_NobleCloth</li>
+					<li>Mofy_NobleCape</li>
+					<li>Mofy_SwimSuit</li>
+				</apparelList>
+				<weaponList>
+					<li>Mofy_Pickaxe</li>
+					<li>Mofy_Axe</li>
+					<li>Mofy_BlacksmithHammer</li>
+					<li>Mofy_Knife</li>
+				</weaponList>
+				<blackGeneList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">FacialRidges</li>
+				</blackGeneList>
+				<blackGeneTags>
+					<li>SkinColor</li>
+					<li>HairColor</li>
+					<li>EyeColor</li>
+					<li>BodyType</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>Headbone</li>
+					<li>HairStyle</li>
+					<li>BeardStyle</li>
+					<li>SkinColorOverride</li>
+					<li>Fur</li>
+					<li>Tail</li>
+				</blackGeneTags>
+				<blackEndoCategories>
+					<li>Melanin</li>
+					<li>HairColor</li>
+					<li>Ears</li>
+					<li>Nose</li>
+					<li>Jaw</li>
+					<li>Head</li>
+					<li>BodyType</li>
+				</blackEndoCategories>
+			</raceRestriction>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+					<li>EnvironmentDark</li>
+					<li>NeedOutdoors</li>
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>AteWithoutTable</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Mofy</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+		</alienRace>
+		<statBases>
+			<Mass>30</Mass>
+			<MarketValue>750</MarketValue>
+			<MoveSpeed>4.75</MoveSpeed>
+			<Flammability>1.25</Flammability>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<ToxicResistance>-0.1</ToxicResistance>
+			<ComfyTemperatureMin>-36</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+			<CarryingCapacity>200</CarryingCapacity>
+			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.10</ArmorRating_Heat>
+			<MeatAmount>100</MeatAmount>
+			<LeatherAmount>25</LeatherAmount>
+			<PainShockThreshold>0.95</PainShockThreshold>
+			<MeleeDodgeChance>2</MeleeDodgeChance>
+			<GlobalLearningFactor>0.75</GlobalLearningFactor>
+			<MiningSpeed>1.3</MiningSpeed>
+			<ConstructionSpeed>1.3</ConstructionSpeed>
+			<GeneralLaborSpeed>1.3</GeneralLaborSpeed>
+			<RoyalFavorValue>5</RoyalFavorValue>
+			<Fertility MayRequire="Ludeon.RimWorld.Biotech">2.0</Fertility>
+		</statBases>
+		<tools>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Bite</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Blunt</def>
+							<amount>5</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Blunt</def>
+							<amount>5</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>drop kick</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Blunt</def>
+							<amount>15</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<baseHungerRate>0.6</baseHungerRate>
+			<intelligence>Humanlike</intelligence>
+			<fleshType>Mofy</fleshType>
+			<makesFootprints>false</makesFootprints>
+			<lifeExpectancy>50</lifeExpectancy>
+			<leatherDef>Leather_Light</leatherDef>
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<trainability>Advanced</trainability>
+			<body>Mofy</body>
+			<baseBodySize>0.6</baseBodySize>
+			<baseHealthScale>1.75</baseHealthScale>
+			<wildness>0.15</wildness>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<foodType>OmnivoreAnimal</foodType>
+			<gestationPeriodDays>15</gestationPeriodDays>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<litterSizeCurve>
+				<points>
+					<li>(0, 0)</li>
+					<li>(1, 0.65)</li>
+					<li>(2, 0.30)</li>
+					<li>(3, 0.05)</li>
+					<li>(4, 0)</li>
+					<li>(5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Mofy_Baby</def>
+					<minAge>0</minAge>
+					<headOffsetDirectional>
+						<north>(0.0, 0.0)</north>
+						<east>(0.06, 0.0)</east>
+						<south>(0.0, 0.0)</south>
+						<west>(-0.06, 0.0)</west>
+					</headOffsetDirectional>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>Mofy_Child</def>
+					<minAge>1</minAge>
+					<headOffsetDirectional>
+						<north>(0.0, 0.0)</north>
+						<east>(0.06, 0.0)</east>
+						<south>(0.0, 0.0)</south>
+						<west>(-0.06, 0.0)</west>
+					</headOffsetDirectional>
+				</li>
+				<li>
+					<def>Mofy_Adult</def>
+					<minAge>5</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>3</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>5</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">3</Childcare>
+				<BasicWorker>5</BasicWorker>
+				<Warden>5</Warden>
+				<Handling>3</Handling>
+				<Cooking>5</Cooking>
+				<Hunting>5</Hunting>
+				<Construction>3</Construction>
+				<Growing>5</Growing>
+				<Mining>3</Mining>
+				<PlantCutting>5</PlantCutting>
+				<Smithing>3</Smithing>
+				<Tailoring>5</Tailoring>
+				<Art>5</Art>
+				<Crafting>3</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>5</Research>
+			</lifeStageWorkSettings>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(6,0)</li>
+					<li>(7,100)</li>
+					<li>(10,100)</li>
+					<li>(15,80)</li>
+					<li>(20,30)</li>
+					<li>(30,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+			</hediffGiverSets>
+		</race>
+		<butcherProducts>
+			<Mofy_PreMofuStone>50</Mofy_PreMofuStone>
+		</butcherProducts>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Mofy_Milk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>3</milkAmount>
+			</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<LifeStageDef>
+		<defName>Mofy_Baby</defName>
+		<label>Mofy Baby</label>
+		<reproductive>false</reproductive>
+		<visible>false</visible>
+		<developmentalStage>Baby</developmentalStage>
+		<statFactors>
+			<MoveSpeed>0.25</MoveSpeed>
+		</statFactors>
+		<meleeDamageFactor>0.5</meleeDamageFactor>
+		<healthScaleFactor>0.25</healthScaleFactor>
+	</LifeStageDef>
+	
+	<LifeStageDef>
+		<defName>Mofy_Child</defName>
+		<label>Mofy Child</label>
+		<reproductive>false</reproductive>
+		<visible>false</visible>
+		<developmentalStage>Child</developmentalStage>
+		<statFactors>
+			<MoveSpeed>0.75</MoveSpeed>
+		</statFactors>
+		<meleeDamageFactor>0.5</meleeDamageFactor>
+		<healthScaleFactor>0.5</healthScaleFactor>
+	</LifeStageDef>
+	
+	<LifeStageDef>
+		<defName>Mofy_Adult</defName>
+		<label>Mofy Adult</label>
+		<reproductive>true</reproductive>
+		<milkable>true</milkable>
+		<visible>false</visible>
+		<developmentalStage>Adult</developmentalStage>
+	</LifeStageDef>
+	
+	<AlienRace.RaceSettings>
+		<defName>Mofy_Settings</defName>
+		<pawnKindSettings>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>Mofy_Slave</li>
+					</kindDefs>
+					<chance>30.0</chance>
+				</li>
+			</alienslavekinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+	
+</Defs>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>Mofy_Kingdom</defName>
+    <label>Mofy Kingdom</label>
+    <description>It is a small mofy kingdom based in a cold region. Their furniture, made from a combination of ice and stone, is a specialty product of high value.</description>
+    <colorSpectrum>
+      <li>(0.3, 0.5, 0.78)</li>
+      <li>(0.3, 0.7, 0.83)</li>
+    </colorSpectrum>
+    <pawnSingular>Kingdom Mofy</pawnSingular>
+    <pawnsPlural>Kingdom Mofy's</pawnsPlural>
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <settlementGenerationWeight>0.5</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>false</canStageAttacks>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <autoFlee>true</autoFlee>
+    <classicIdeo>false</classicIdeo>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <factionIconPath>Mofy/UI/Faction/icon</factionIconPath>
+    <techLevel>Medieval</techLevel>
+    <allowedArrivalTemperatureRange>-40~25</allowedArrivalTemperatureRange>
+    <minSettlementTemperatureChanceCurve>
+      <points>
+      <li>(-30, 0)</li>
+       <li>(-25, 100)</li>
+       <li>(-15, 100)</li>
+       <li>(10, 100)</li>
+       <li>(15, 30)</li>
+       <li>(20, 0)</li>
+       <li>(30, 0)</li>
+      </points>
+    </minSettlementTemperatureChanceCurve>
+    <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+    <allowedCultures><li MayRequire="Ludeon.RimWorld.Ideology">Mofy_Culture</li></allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Mofy_Mofy</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Mofy_Mofy</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">10</Structure_Animist>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Mofy_Story_Kingdom</li>
+          <li>Mofy_Story_Kingdom_Noble</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Mofy_Kingdom_Fighter>10</Mofy_Kingdom_Fighter>
+          <Mofy_Morphy>3</Mofy_Morphy>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Mofy_Kingdom_Fighter>10</Mofy_Kingdom_Fighter>
+          <Mofy_Morphy>3</Mofy_Morphy>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Mofy_Kingdom_Trader>1</Mofy_Kingdom_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>10</Muffalo>
+        </carriers>
+        <guards>
+          <Mofy_Kingdom_Fighter>10</Mofy_Kingdom_Fighter>
+        </guards>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>Mofy/UI/Faction/icon</settlementTexturePath>
+    <xenotypeSet>
+      <xenotypeChances>
+      </xenotypeChances>
+    </xenotypeSet>
+  </FactionDef>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>Mofy_WildMofy</defName>
+    <label>Wild Mofy</label>
+    <description>Various wild Mofy herds.</description>
+    <colorSpectrum>
+      <li>(0, 1, 0.6)</li>
+      <li>(0, 0.9, 0.8)</li>
+    </colorSpectrum>
+    <pawnSingular>Wild Mofy</pawnSingular>
+    <pawnsPlural>Wild Mofies</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <hidden>true</hidden>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <autoFlee>false</autoFlee>
+    <classicIdeo>false</classicIdeo>
+    <factionIconPath>Mofy/UI/Faction/icon</factionIconPath>
+    <techLevel>Neolithic</techLevel>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <allowedCultures>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Mofy_Culture</li>
+    </allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Mofy_Mofy</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Mofy_Mofy</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">10</Structure_Animist>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Mofy_Story_Kingdom</li>
+          <li>Mofy_Story_Slave</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <settlementTexturePath>Mofy/UI/Faction/icon</settlementTexturePath>
+    <xenotypeSet>
+      <xenotypeChances>
+      </xenotypeChances>
+    </xenotypeSet>
+  </FactionDef>
+
+</Defs>

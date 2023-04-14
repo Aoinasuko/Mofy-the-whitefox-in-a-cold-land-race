@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_Pawn.label>モフィー</Mofy_Pawn.label>
+  <Mofy_Pawn.description>モフィーは狐のような白い耳と尻尾を持つ種族です.\nかつて「食料にもなる労働力」として人間に開発されたモフィーは,様々な便利な特徴を持っています.\n\n成熟した個体から栄養満点のミルクを入手することが出来ます.\nミルクは飲むことで一時的に免疫力を高めてくれます.\n\nまた,肉は人間にも親しみやすい味でありとても美味しいわけではありませんが食べるのに問題はありません.\n\n建築,工芸,採掘を素早く行うことが出来ますが,それ以外の物覚えが悪く習得するまでに時間がかかってしまいます.\n\n今では寒冷地や地下深くに王国を作り,静かに暮らすモフィー達も居るようです.</Mofy_Pawn.description>
+  <Mofy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</Mofy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Mofy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>hair</Mofy_Pawn.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Mofy_Pawn.tools.0.label>歯</Mofy_Pawn.tools.0.label>
+  <Mofy_Pawn.tools.1.label>左拳</Mofy_Pawn.tools.1.label>
+  <Mofy_Pawn.tools.2.label>右拳</Mofy_Pawn.tools.2.label>
+  <Mofy_Pawn.tools.3.label>ドロップキック</Mofy_Pawn.tools.3.label>
+
+</LanguageData>

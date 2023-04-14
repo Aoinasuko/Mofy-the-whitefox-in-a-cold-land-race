@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_Morphy.label>モーフィー</Mofy_Morphy.label>
+  <Mofy_Morphy.description>モフィ―の遺伝子から作られた狐の様な生き物です.\nモフィ―の環境に適応してモフィ―の家畜として生きています.\n狐より大人しく積極的に狩りを行うことはありません.\nモフィ―同様,敵にはドロップキックで立ち向かいます.</Mofy_Morphy.description>
+  <Mofy_Morphy.tools.0.label>左爪</Mofy_Morphy.tools.0.label>
+  <Mofy_Morphy.tools.1.label>右爪</Mofy_Morphy.tools.1.label>
+  <Mofy_Morphy.tools.3.label>頭突き</Mofy_Morphy.tools.3.label>
+  <Mofy_Morphy.tools.4.label>ドロップキック</Mofy_Morphy.tools.4.label>
+  <Mofy_Morphy.tools.5.label>ドロップキック</Mofy_Morphy.tools.5.label>
+
+
+</LanguageData>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_Pickaxe.label>Mofy ピッケル</Mofy_Pickaxe.label>
+  <Mofy_Pickaxe.description>体格の小さい種族のためのピッケルです. 武器として使うのは無謀でしょう.\n\n&lt;color=#B1FBFF&gt;この装備は体格の小さな他の種族も扱うことが出来るでしょう.&lt;/color&gt;</Mofy_Pickaxe.description>
+  <Mofy_Pickaxe.tools.0.label>柄</Mofy_Pickaxe.tools.0.label>
+  <Mofy_Pickaxe.tools.1.label>先</Mofy_Pickaxe.tools.1.label>
+
+  <Mofy_Axe.label>Mofy 斧</Mofy_Axe.label>
+  <Mofy_Axe.description>体格の小さい種族のための斧です. 武器として使うのは無謀でしょう.\n\n&lt;color=#B1FBFF&gt;この装備は体格の小さな他の種族も扱うことが出来るでしょう.&lt;/color&gt;</Mofy_Axe.description>
+  <Mofy_Axe.tools.0.label>柄</Mofy_Axe.tools.0.label>
+  <Mofy_Axe.tools.1.label>刃</Mofy_Axe.tools.1.label>
+
+  <Mofy_BlacksmithHammer.label>Mofy 鍛冶槌</Mofy_BlacksmithHammer.label>
+  <Mofy_BlacksmithHammer.description>体格の小さい種族のための鍛冶槌です. 武器として使うのは無謀でしょう.\n\n&lt;color=#B1FBFF&gt;この装備は体格の小さな他の種族も扱うことが出来るでしょう.&lt;/color&gt;</Mofy_BlacksmithHammer.description>
+  <Mofy_BlacksmithHammer.tools.0.label>柄</Mofy_BlacksmithHammer.tools.0.label>
+  <Mofy_BlacksmithHammer.tools.1.label>頭部</Mofy_BlacksmithHammer.tools.1.label>
+
+  <Mofy_Knife.label>Mofy 包丁</Mofy_Knife.label>
+  <Mofy_Knife.description>体格の小さい種族のための包丁です. 武器として使うのは無謀でしょう.\n\n&lt;color=#B1FBFF&gt;この装備は体格の小さな他の種族も扱うことが出来るでしょう.&lt;/color&gt;</Mofy_Knife.description>
+  <Mofy_Knife.tools.0.label>柄</Mofy_Knife.tools.0.label>
+  <Mofy_Knife.tools.1.label>刃</Mofy_Knife.tools.1.label>
+
+</LanguageData>

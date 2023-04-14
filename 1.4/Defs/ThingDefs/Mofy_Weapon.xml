@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="Mofy_BaseWeapon_Ranged" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <tickerType>Normal</tickerType>
+    <tradeability>Sellable</tradeability>
+    <equipmentType>Primary</equipmentType>
+    <useHitPoints>true</useHitPoints>
+    <pathCost>14</pathCost>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <Beauty>5</Beauty>
+      <SellPriceFactor>0.20</SellPriceFactor>
+    </statBases>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <relicChance>0</relicChance>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+  </ThingDef>
+
+  <ThingDef ParentName="Mofy_BaseWeapon_Ranged">
+    <defName>Mofy_SmallBomb</defName>
+    <label>Mofy SmallBomb</label>
+    <description>It is a simple bomb. Although the time to detonation is short, the power is controlled.</description>
+    <graphicData>
+      <texPath>Mofy/Thing/Weapon/Minibomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <costList>
+      <Mofy_MofuStone>20</Mofy_MofuStone>
+      <Chemfuel>80</Chemfuel>
+    </costList>
+    <statBases>
+      <Mass>0.5</Mass>
+      <WorkToMake>12000</WorkToMake>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>Mofy_LowTier</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Mofy_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Mofy_ExplosiveDemolition</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <label>throw bomb</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>16.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.0</warmupTime>
+        <noiseRadius>5</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Mofy_Bomb</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseFragGrenadeProjectile">
+    <defName>Mofy_Bomb</defName>
+    <label>Mofy Bomb</label>
+    <graphicData>
+      <texPath>Mofy/Thing/Weapon/Minibomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.9</explosionRadius >
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <explosionDelay>1</explosionDelay>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="Mofy_BaseWeapon_Ranged">
+    <defName>Mofy_FreezeBomb</defName>
+    <label>Mofy FreezeBomb</label>
+    <description>It is a bomb packed with instant cooling gas that evaporates in a short time. The gas released by the explosion ices enemies within range. However, it is less effective against mechanoids.</description>
+    <graphicData>
+      <texPath>Mofy/Thing/Weapon/Freezebomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <costList>
+      <Mofy_MofuHail>20</Mofy_MofuHail>
+      <Chemfuel>80</Chemfuel>
+    </costList>
+    <statBases>
+      <Mass>0.5</Mass>
+      <WorkToMake>18000</WorkToMake>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Mofy_MidTier</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Mofy_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Mofy_FreezeBomb</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <label>throw bomb</label>
+        <verbClass>Verb_LaunchProjectile</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>20.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>1.0</warmupTime>
+        <noiseRadius>5</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Mofy_FreezeBomb_Bomb</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseFragGrenadeProjectile">
+    <defName>Mofy_FreezeBomb_Bomb</defName>
+    <label>Mofy FreezeBomb</label>
+    <thingClass>Mofy_Race.Mofy_FreezeBomb</thingClass>
+    <graphicData>
+      <texPath>Mofy/Thing/Weapon/Freezebomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>2.9</explosionRadius >
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <explosionDelay>1</explosionDelay>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef>
+    <category>Gas</category>
+    <altitudeLayer>Gas</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <defName>Mofy_FreezeGas</defName>
+    <label>Freeze Gas</label>
+    <thingClass>Mofy_Race.Mofy_GasFreeze</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Gas</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <texPath>Things/Gas/Puff</texPath>
+      <color>(0.5,1.0,1.0,0.5)</color>
+      <drawSize>(2.2,2.2)</drawSize>
+    </graphicData>
+    <gas>
+      <expireSeconds>5~6</expireSeconds>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Mofy_IceGrave</defName>
+    <label>ice grave</label>
+    <description>It is a state in which some organism has been put on ice.</description>
+    <thingClass>Mofy_Race.Building_IceGrave</thingClass>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Mofy/Build/IceGrave</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <size>(1,1)</size>
+    <pathCost>42</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <tickerType>Rare</tickerType>
+    <rotatable>false</rotatable>
+    <statBases>
+      <Mass>20</Mass>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
+  </ThingDef>
+  
+</Defs>

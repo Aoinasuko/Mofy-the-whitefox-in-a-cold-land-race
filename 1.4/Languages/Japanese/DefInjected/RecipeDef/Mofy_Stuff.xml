@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Make_MofuStone.label>モフ石を作る</Make_MofuStone.label>
+  <Make_MofuStone.description>モフ石の元と石材を合わせて,頑丈なモフ石を作ります.</Make_MofuStone.description>
+  <Make_MofuStone.jobString>モフ石を作っている</Make_MofuStone.jobString>
+
+  <Make_MofuStoneBulk_Bulk.label>モフ石を作る x5</Make_MofuStoneBulk_Bulk.label>
+  <Make_MofuStoneBulk_Bulk.description>モフ石の元と石材を合わせて,頑丈なモフ石を作ります.</Make_MofuStoneBulk_Bulk.description>
+  <Make_MofuStoneBulk_Bulk.jobString>モフ石を作っている</Make_MofuStoneBulk_Bulk.jobString>
+
+  <Make_MofuStone_Alternative.label>モフ石を作る(代用)</Make_MofuStone_Alternative.label>
+  <Make_MofuStone_Alternative.description>モフィーの死体を利用せずに,石材だけでモフ石を作成します.\nただし,通常よりも多くの資材と時間を消費します.</Make_MofuStone_Alternative.description>
+  <Make_MofuStone_Alternative.jobString>モフ石を作っている</Make_MofuStone_Alternative.jobString>
+
+  <Make_MofuStone_Alternative_Bulk.label>モフ石を作る(代用) x5</Make_MofuStone_Alternative_Bulk.label>
+  <Make_MofuStone_Alternative_Bulk.description>モフィーの死体を利用せずに,石材だけでモフ石を作成します.\nただし,通常よりも多くの資材と時間を消費します.</Make_MofuStone_Alternative_Bulk.description>
+  <Make_MofuStone_Alternative_Bulk.jobString>モフ石を作っている</Make_MofuStone_Alternative_Bulk.jobString>
+
+  <Make_MofuHail.label>モフ氷を作る</Make_MofuHail.label>
+  <Make_MofuHail.description>モフ石を加工し,美しいモフ氷を作成します.</Make_MofuHail.description>
+  <Make_MofuHail.jobString>モフ氷を作っている</Make_MofuHail.jobString>
+
+  <Make_MofuHail_Bulk.label>モフ氷を作る x5</Make_MofuHail_Bulk.label>
+  <Make_MofuHail_Bulk.description>モフ石を加工し,美しいモフ氷を作成します.</Make_MofuHail_Bulk.description>
+  <Make_MofuHail_Bulk.jobString>モフ氷を作っている</Make_MofuHail_Bulk.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<StyleItemCategoryDef>
+		<defName>Mofy</defName>
+		<label>Mofy</label>
+	</StyleItemCategoryDef>
+	
+	<HairDef>
+		<defName>Mofy_Short</defName>
+		<label>Mofy Short</label>
+		<styleGender>Any</styleGender>
+		<texPath>Mofy/Race/Hair/Short/Short</texPath>
+		<category>Mofy</category>
+		<styleTags>
+			<li>Mofy</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>Mofy_Okappa</defName>
+		<label>Mofy Okappa</label>
+		<styleGender>Any</styleGender>
+		<texPath>Mofy/Race/Hair/Okappa/Okappa</texPath>
+		<category>Mofy</category>
+		<styleTags>
+			<li>Mofy</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>Mofy_Long</defName>
+		<label>Mofy Long</label>
+		<styleGender>Any</styleGender>
+		<texPath>Mofy/Race/Hair/Long/Long</texPath>
+		<category>Mofy</category>
+		<styleTags>
+			<li>Mofy</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>Mofy_Mituami</defName>
+		<label>Mofy Mituami</label>
+		<styleGender>Any</styleGender>
+		<texPath>Mofy/Race/Hair/Mituami/Mituami</texPath>
+		<category>Mofy</category>
+		<styleTags>
+			<li>Mofy</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>Mofy_Ahoge</defName>
+		<label>Mofy Ahoge</label>
+		<styleGender>Any</styleGender>
+		<texPath>Mofy/Race/Hair/Ahoge/Ahoge</texPath>
+		<category>Mofy</category>
+		<styleTags>
+			<li>Mofy</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>Mofy_TwintailLike</defName>
+		<label>Mofy TwintailLike</label>
+		<styleGender>Any</styleGender>
+		<texPath>Mofy/Race/Hair/TwintailLike/TwintailLike</texPath>
+		<category>Mofy</category>
+		<styleTags>
+			<li>Mofy</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>Mofy_Mekakure_L</defName>
+		<label>Mofy Mekakure L</label>
+		<styleGender>Any</styleGender>
+		<texPath>Mofy/Race/Hair/MekakureL/MekakureL</texPath>
+		<category>Mofy</category>
+		<styleTags>
+			<li>Mofy</li>
+		</styleTags>
+	</HairDef>
+	
+	<HairDef>
+		<defName>Mofy_Mekakure_R</defName>
+		<label>Mofy Mekakure R</label>
+		<styleGender>Any</styleGender>
+		<texPath>Mofy/Race/Hair/MekakureR/MekakureR</texPath>
+		<category>Mofy</category>
+		<styleTags>
+			<li>Mofy</li>
+		</styleTags>
+	</HairDef>
+	
+</Defs>

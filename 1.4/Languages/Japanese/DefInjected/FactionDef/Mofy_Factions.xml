@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_Kingdom.label>モフィーの王国</Mofy_Kingdom.label>
+  <Mofy_Kingdom.description>寒冷な地方に拠点を置く小さなモフィーの王国です.\n\n彼らが作る,氷と石を組み合わせて作られた家具は高い価値を持っています.</Mofy_Kingdom.description>
+  <Mofy_Kingdom.pawnsPlural>王国のモフィーたち</Mofy_Kingdom.pawnsPlural>
+
+  <Mofy_WildMofy.label>野生のモフィー</Mofy_WildMofy.label>
+  <Mofy_WildMofy.description>野生のモフィーです.</Mofy_WildMofy.description>
+  <Mofy_WildMofy.pawnsPlural>野生のモフィーたち</Mofy_WildMofy.pawnsPlural>
+
+
+</LanguageData>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Mofy the WhiteFox in a Cold Land Race</name>
+  <author>Aoi_nasuko</author>
+  <packageId>bep.mofy.twfiaclr</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+      <downloadUrl></downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>Nals.FacialAnimation</li>
+    <li>Nals.FacialAnimationExperimentals</li>
+  </loadAfter>
+  <description><![CDATA[
+【対応言語】
+日本語
+English(Machine translation)
+
+寒冷地の白狐、モフィー。
+
+<color=#77FFFF><size=20>＊概要</size></color>
+このMODはLittle Fairy RopeWorkTaleに実装していたモフィーを分離し、作成し直したMODです。
+狐と牛の遺伝子を持つ、便利な種族であるモフィーを追加します。
+
+<color=#77FFFF><size=15>＊ストーリー</size></color>
+かつて寒冷地でまともに動けない人間に変わり、なおかつ食料にもなる労働力として狐と牛の遺伝子から改造して作られたのがモフィーです。
+彼女達が作られた頃は、その目論見どおり食料兼労働力として活躍していきました。
+しかし彼女達は長い時間の中で内面の進化によって、人間よりも少し劣る程度の知恵をつけていきました。
+そしていつの日か、彼女達が家畜であったことは忘れ去られ、人間と共生する関係になったのです。
+
+しかし、ある日のことでした。
+人間たちが実験を行っていたウェザーコントロール装置が暴走をし、星を強烈な寒波が覆い尽くしました。
+この「永遠の寒波」が始まりを告げた後人間たちは少ない食料を巡って争いを始めました。
+そしてその中で人間たちは「モフィー達が人間たちの食料として食べることができる」ことを古い文献から知ってしまいます。
+その結果モフィー達は人間たちに食料として乱獲されました。
+危機感を感じたモフィー達は、最終的に人間たちのシャトルを奪ったり、自身で宇宙船を建造し脱出を図ったりしました。
+
+その後、長らく消息不明だったモフィー達はある企業によって改良を行われ、奉仕種族として様々な星に散らばったことが明らかになっています。
+その中には地下深くに王国を作り建造の知識を深めている者、他種族に仕える者など
+様々なモフィー達を見ることができるでしょう。
+
+<color=#77FFFF><size=15>＊入手方法</size></color>
+-時折、奴隷として売られているため購入して入手
+-中立のモフィーを捕らえて入手
+
+<color=#77FFFF><size=15>＊特徴</size></color>
+<color=#77FFFF>-寒さに少し強い</color>
+<color=#77FFFF>-体格がやや小さい</color>
+<color=#77FFFF>-部位HPが高い</color>
+<color=#77FFFF>-アイテムを運べる量が多い</color>
+<color=#77FFFF>-建築、工芸、採掘の速度が早い</color>
+<color=#77FFFF>-格闘で強力なドロップキック攻撃を行える</color>
+<color=#77FFFF>-死体を解体してもペナルティを受けず、食べても人肉扱いではない</color>
+<color=#77FFFF>-Ideorogy導入時、奴隷状態の時に脱走しない</color>
+<color=#77FFFF>-人間の武器が装備可能</color>
+<color=#77FFFF>-成熟したメスの個体から、病気の治りを早めるミルクを採取することが出来る</color>
+
+<color=#FF7777>-物覚えが悪い</color>
+<color=#FF7777>-毒に弱い</color>
+
+<color=#77FFFF><size=20>＊その他、このMODで追加されるもの</size></color>
+-モフィーの研究が追加されます。
+-モフィーの建築物を追加します。
+-モフィーの衣装と武器を追加します。
+
+]]></description>
+</ModMetaData>

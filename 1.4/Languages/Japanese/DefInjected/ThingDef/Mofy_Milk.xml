@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_Milk.label>Mofy ミルク</Mofy_Milk.label>
+  <Mofy_Milk.description>モフィーから採取できるミルクです.\n飲むことで,一時的に病気の治りを早くしてくれます.</Mofy_Milk.description>
+
+  <Mofy_Milkcocktail.label>Mofy ミルクカクテル</Mofy_Milkcocktail.label>
+  <Mofy_Milkcocktail.description>モフィーのミルクから作られたミルクカクテル.\nアルコールの量はビールよりも控えめです.</Mofy_Milkcocktail.description>
+  <Mofy_Milkcocktail.ingestible.ingestCommandString>{0}を飲む</Mofy_Milkcocktail.ingestible.ingestCommandString>
+  <Mofy_Milkcocktail.ingestible.ingestReportString>{0}を飲んでいる</Mofy_Milkcocktail.ingestible.ingestReportString>
+
+
+</LanguageData>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 王国 -->
+
+  <Mofy_Kingdom_Child_A.title>王国のコックの子供</Mofy_Kingdom_Child_A.title>
+  <Mofy_Kingdom_Child_A.titleShort>コック</Mofy_Kingdom_Child_A.titleShort>
+  <Mofy_Kingdom_Child_A.baseDesc>[PAWN_nameDef]は王国のコックの子供でした. 彼は両親から沢山の料理の知識を学びました.</Mofy_Kingdom_Child_A.baseDesc>
+
+  <Mofy_Kingdom_Child_B.title>王国の建築士の子供</Mofy_Kingdom_Child_B.title>
+  <Mofy_Kingdom_Child_B.titleShort>建築士</Mofy_Kingdom_Child_B.titleShort>
+  <Mofy_Kingdom_Child_B.baseDesc>[PAWN_nameDef]は王国の建築士の子供でした. 彼は両親から沢山の建築の知識を学びました.</Mofy_Kingdom_Child_B.baseDesc>
+
+  <Mofy_Kingdom_Child_C.title>王国の工芸士の子供</Mofy_Kingdom_Child_C.title>
+  <Mofy_Kingdom_Child_C.titleShort>工芸士</Mofy_Kingdom_Child_C.titleShort>
+  <Mofy_Kingdom_Child_C.baseDesc>[PAWN_nameDef]は王国の工芸士の子供でした. 彼は両親から沢山の工芸の知識を学びました.</Mofy_Kingdom_Child_C.baseDesc>
+
+  <Mofy_Kingdom_Child_D.title>王国の医者の子供</Mofy_Kingdom_Child_D.title>
+  <Mofy_Kingdom_Child_D.titleShort>医者</Mofy_Kingdom_Child_D.titleShort>
+  <Mofy_Kingdom_Child_D.baseDesc>[PAWN_nameDef]は王国の医者の子供でした. 彼は両親から沢山の医療の知識を学びました.</Mofy_Kingdom_Child_D.baseDesc>
+
+  <Mofy_Kingdom_Child_E.title>王国の戦士の子供</Mofy_Kingdom_Child_E.title>
+  <Mofy_Kingdom_Child_E.titleShort>戦士</Mofy_Kingdom_Child_E.titleShort>
+  <Mofy_Kingdom_Child_E.baseDesc>[PAWN_nameDef]は王国の戦士の子供でした. 彼は両親から沢山の戦いの知識を学びました.</Mofy_Kingdom_Child_E.baseDesc>
+
+  <Mofy_Kingdom_Child_F.title>王国の狩人の子供</Mofy_Kingdom_Child_F.title>
+  <Mofy_Kingdom_Child_F.titleShort>狩人</Mofy_Kingdom_Child_F.titleShort>
+  <Mofy_Kingdom_Child_F.baseDesc>[PAWN_nameDef]は王国の狩人の子供でした. 彼は両親から沢山の狩りの知識を学びました.</Mofy_Kingdom_Child_F.baseDesc>
+
+  <Mofy_Kingdom_Child_G.title>王国の貴族の子供</Mofy_Kingdom_Child_G.title>
+  <Mofy_Kingdom_Child_G.titleShort>貴族</Mofy_Kingdom_Child_G.titleShort>
+  <Mofy_Kingdom_Child_G.baseDesc>[PAWN_nameDef]は王国の貴族の子供でした. 彼は両親から沢山の交渉の知識を学びました.</Mofy_Kingdom_Child_G.baseDesc>
+
+  <Mofy_Kingdom_Adult_A.title>王国のコック</Mofy_Kingdom_Adult_A.title>
+  <Mofy_Kingdom_Adult_A.titleShort>コック</Mofy_Kingdom_Adult_A.titleShort>
+  <Mofy_Kingdom_Adult_A.baseDesc>[PAWN_nameDef]は王国のコックに任命され,たくさんの料理を作ってきました.</Mofy_Kingdom_Adult_A.baseDesc>
+
+  <Mofy_Kingdom_Adult_B.title>王国の建築士</Mofy_Kingdom_Adult_B.title>
+  <Mofy_Kingdom_Adult_B.titleShort>建築士</Mofy_Kingdom_Adult_B.titleShort>
+  <Mofy_Kingdom_Adult_B.baseDesc>[PAWN_nameDef]は王国の建築士に任命され,沢山の壁と拠点を守る設備を建築してきました.</Mofy_Kingdom_Adult_B.baseDesc>
+
+  <Mofy_Kingdom_Adult_C.title>王国の工芸士</Mofy_Kingdom_Adult_C.title>
+  <Mofy_Kingdom_Adult_C.titleShort>工芸士</Mofy_Kingdom_Adult_C.titleShort>
+  <Mofy_Kingdom_Adult_C.baseDesc>[PAWN_nameDef]は王国の工芸士に任命され,沢山の武器や衣類を製造してきました.</Mofy_Kingdom_Adult_C.baseDesc>
+
+  <Mofy_Kingdom_Adult_D.title>王国の医者</Mofy_Kingdom_Adult_D.title>
+  <Mofy_Kingdom_Adult_D.titleShort>医者</Mofy_Kingdom_Adult_D.titleShort>
+  <Mofy_Kingdom_Adult_D.baseDesc>[PAWN_nameDef]は王国の医者に任命され,沢山の怪我人を治療してきました.</Mofy_Kingdom_Adult_D.baseDesc>
+
+  <Mofy_Kingdom_Adult_E.title>王国の戦士</Mofy_Kingdom_Adult_E.title>
+  <Mofy_Kingdom_Adult_E.titleShort>戦士</Mofy_Kingdom_Adult_E.titleShort>
+  <Mofy_Kingdom_Adult_E.baseDesc>[PAWN_nameDef]は王国の戦士に任命され,沢山の戦いを経験してきました.</Mofy_Kingdom_Adult_E.baseDesc>
+
+  <Mofy_Kingdom_Adult_F.title>王国の狩人</Mofy_Kingdom_Adult_F.title>
+  <Mofy_Kingdom_Adult_F.titleShort>狩人</Mofy_Kingdom_Adult_F.titleShort>
+  <Mofy_Kingdom_Adult_F.baseDesc>[PAWN_nameDef]は王国の狩人に任命され,凶暴な動物たちを狩っていました.</Mofy_Kingdom_Adult_F.baseDesc>
+
+  <Mofy_Kingdom_Adult_G.title>王国の貴族</Mofy_Kingdom_Adult_G.title>
+  <Mofy_Kingdom_Adult_G.titleShort>貴族</Mofy_Kingdom_Adult_G.titleShort>
+  <Mofy_Kingdom_Adult_G.baseDesc>[PAWN_nameDef]は王国の貴族に任命され,他の派閥との交渉という大事な役割をこなしていました.</Mofy_Kingdom_Adult_G.baseDesc>
+
+
+  <!-- 奴隷 -->
+
+  <Mofy_Slave_Child_A.title>養殖モフィー</Mofy_Slave_Child_A.title>
+  <Mofy_Slave_Child_A.titleShort>養殖</Mofy_Slave_Child_A.titleShort>
+  <Mofy_Slave_Child_A.baseDesc>[PAWN_nameDef]は労働力兼食料として,人の手で養殖されたモフィーです.</Mofy_Slave_Child_A.baseDesc>
+
+  <Mofy_Slave_Child_B.title>はぐれモフィー</Mofy_Slave_Child_B.title>
+  <Mofy_Slave_Child_B.titleShort>はぐれ</Mofy_Slave_Child_B.titleShort>
+  <Mofy_Slave_Child_B.baseDesc>[PAWN_nameDef]は何らかの理由ではぐれてしまったモフィーです.</Mofy_Slave_Child_B.baseDesc>
+
+  <Mofy_Slave_Adult_A.title>家畜モフィー</Mofy_Slave_Adult_A.title>
+  <Mofy_Slave_Adult_A.titleShort>家畜</Mofy_Slave_Adult_A.titleShort>
+  <Mofy_Slave_Adult_A.baseDesc>[PAWN_nameDef]は家畜として,各地の奴隷商人の元で商品として売られていました.</Mofy_Slave_Adult_A.baseDesc>
+
+  <Mofy_Slave_Adult_B.title>労働モフィー</Mofy_Slave_Adult_B.title>
+  <Mofy_Slave_Adult_B.titleShort>労働</Mofy_Slave_Adult_B.titleShort>
+  <Mofy_Slave_Adult_B.baseDesc>[PAWN_nameDef]は労働力として,各地の奴隷商人の元で商品として売られていました.</Mofy_Slave_Adult_B.baseDesc>
+
+
+</LanguageData>
