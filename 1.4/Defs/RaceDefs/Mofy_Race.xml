@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+	<AlienRace.ThingDef_AlienRace Tag="BEPRace" ParentName="BasePawn">
 		<defName>Mofy_Pawn</defName>
 		<label>Mofy</label>
 		<description>Mofy are a race with fox-like white ears and tails. Once developed by humans as a "labor force that could also serve as food" Mofy have a variety of useful traits.\n\nNutritious milk is available from mature individuals. The milk, when drunk, temporarily boosts the immune system.\n\nIn addition, the meat is not very tasty and familiar to humans, but there is no problem in eating it.\n\nThey can build, craft, and mine quickly, but it takes them a long time to learn the rest of the things they are not good at.\n\nSome Mofy's now live quietly in cold lands or deep underground in their kingdoms.</description>
@@ -68,7 +68,7 @@
 						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</bodyTypes>
-					<headOffset>(-0.1, -0.186)</headOffset>
+					<headOffset>(-0.1, -0.26)</headOffset>
 					<customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
 					<colorChannels>
 						<li>
@@ -149,10 +149,11 @@
 					<bodyAddons>
 						<!-- 子供と大人体型の耳 -->
 						<li>
-							<path>Mofy/Race/Ear/Adult/Left/LEar</path>
+							<path>BEPRaceCore/Race/MofyEar/Adult/Left/LEar</path>
 							<bodytypeGraphics>
-								<Baby MayRequire="Ludeon.RimWorld.Biotech">Mofy/Race/Ear/None/None</Baby>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">BEPRaceCore/Race/MofyEar/None/None</Baby>
 							</bodytypeGraphics>
+							<alignWithHead>true</alignWithHead>
 							<bodyPartLabel>left ear</bodyPartLabel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>true</layerInvert>
@@ -175,10 +176,11 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Mofy/Race/Ear/Adult/Right/REar</path>
+							<path>BEPRaceCore/Race/MofyEar/Adult/Right/REar</path>
 							<bodytypeGraphics>
-								<Baby MayRequire="Ludeon.RimWorld.Biotech">Mofy/Race/Ear/None/None</Baby>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">BEPRaceCore/Race/MofyEar/None/None</Baby>
 							</bodytypeGraphics>
+							<alignWithHead>true</alignWithHead>
 							<bodyPartLabel>right ear</bodyPartLabel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>true</layerInvert>
@@ -202,10 +204,11 @@
 						</li>
 						<!-- 赤ちゃん体型の耳 -->
 						<li>
-							<path>Mofy/Race/Ear/None/None</path>
+							<path>BEPRaceCore/Race/MofyEar/None/None</path>
 							<bodytypeGraphics>
-								<Baby MayRequire="Ludeon.RimWorld.Biotech">Mofy/Race/Ear/Baby/Left/LEar</Baby>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">BEPRaceCore/Race/MofyEar/Baby/Left/LEar</Baby>
 							</bodytypeGraphics>
+							<alignWithHead>true</alignWithHead>
 							<bodyPartLabel>left ear</bodyPartLabel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>true</layerInvert>
@@ -228,10 +231,11 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Mofy/Race/Ear/None/None</path>
+							<path>BEPRaceCore/Race/MofyEar/None/None</path>
 							<bodytypeGraphics>
-								<Baby MayRequire="Ludeon.RimWorld.Biotech">Mofy/Race/Ear/Baby/Right/REar</Baby>
+								<Baby MayRequire="Ludeon.RimWorld.Biotech">BEPRaceCore/Race/MofyEar/Baby/Right/REar</Baby>
 							</bodytypeGraphics>
+							<alignWithHead>true</alignWithHead>
 							<bodyPartLabel>right ear</bodyPartLabel>
 							<inFrontOfBody>true</inFrontOfBody>
 							<layerInvert>true</layerInvert>
@@ -254,12 +258,20 @@
 							</offsets>
 						</li>
 						<li>
-							<path>Mofy/Race/Tail/Tail</path>
+							<path>BEPRaceCore/Race/MofyTail/Tail</path>
 							<bodyPart>Mofy_Tail</bodyPart>
 							<inFrontOfBody>false</inFrontOfBody>
 							<drawSize>1</drawSize>
 							<colorChannel>hair</colorChannel>
 							<drawnInBed>false</drawnInBed>
+							<offsets>
+								<east>
+									<bodyTypes>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.05,0)</Child>
+									</bodyTypes>
+								</east>
+							</offsets>
 						</li>
 					</bodyAddons>
 				</alienPartGenerator>
@@ -290,10 +302,13 @@
 				</growthAges>
 			</generalSettings>
 			<graphicPaths>
-				<head>Mofy/Race/Head/Average_Normal</head>
-				<body>Mofy/Race/Body/</body>
-				<skeleton>Mofy/Race/Bone/Bone</skeleton>
-				<skull>Mofy/Race/HeadBone/HeadBone</skull>
+				<head>BEPRaceCore/Race/Head/Average_Normal</head>
+				<body>BEPRaceCore/Race/Body/Normal/</body>
+				<skeleton>BEPRaceCore/Race/Bone/Bone</skeleton>
+				<skull>BEPRaceCore/Race/HeadBone/HeadBone</skull>
+				<apparel>
+					<!-- Apparel Graphics options go here -->
+				</apparel>
 			</graphicPaths>
 			<relationSettings>
 				<relationChanceModifierLover>0</relationChanceModifierLover>
@@ -308,17 +323,6 @@
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
 				<apparelList>
-					<li>Mofy_SimpleCloth</li>
-					<li>Mofy_BlindfoldandGag</li>
-					<li>Mofy_Blindfold</li>
-					<li>Mofy_SimpleCollor</li>
-					<li>Mofy_SlaveStrap</li>
-					<li>Mofy_SimpleArmor</li>
-					<li>Mofy_MaidBand</li>
-					<li>Mofy_MaidCloth</li>
-					<li>Mofy_NobleCloth</li>
-					<li>Mofy_NobleCape</li>
-					<li>Mofy_SwimSuit</li>
 				</apparelList>
 				<weaponList>
 					<li>Mofy_Pickaxe</li>
@@ -377,7 +381,7 @@
 					<value>
 						<hasStyle>true</hasStyle>
 						<styleTagsOverride>
-							<li>Mofy</li>
+							<li>BEPRace</li>
 						</styleTagsOverride>
 					</value>
 				</li>
@@ -598,6 +602,15 @@
 				<milkAmount>3</milkAmount>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="BEPRace_Core.BEPRace_Setting">
+				<ignoreDead>false</ignoreDead>
+				<fleeMeat>true</fleeMeat>
+				<ignoreAge>true</ignoreAge>
+				<ignoreFlee>true</ignoreFlee>
+				<slaveWorkSpeed>1.0</slaveWorkSpeed>
+			</li>
+		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
 	
 	<LifeStageDef>

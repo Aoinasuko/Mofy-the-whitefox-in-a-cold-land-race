@@ -135,22 +135,6 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
-	    <defName>Mofy_Costumes</defName>
-	    <label>Costumes</label>
-	    <description>It will allow you to create Mofy outfits.</description>
-	    <baseCost>500</baseCost>
-	    <techLevel>Medieval</techLevel>
-	    <tab>
-	      <li>Mofy_Research</li>
-	    </tab>
-	    <prerequisites>
-	      <li>Mofy_Knowledge</li>
-	    </prerequisites>
-	    <researchViewX>1</researchViewX>
-	    <researchViewY>5</researchViewY>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef>
 	    <defName>Mofy_WallAttachment</defName>
 	    <label>Wall Attachment</label>
 	    <description>It will be possible to create attachments that can be mounted on the surrounding walls to achieve the desired effect. All attachments are indiscriminately effective and should be handled with care.</description>

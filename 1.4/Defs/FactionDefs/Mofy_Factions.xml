@@ -107,6 +107,18 @@
       <xenotypeChances>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <li Class="BEPRace_Core.BEPRace_FactionSetting">
+        <roleApparels>
+          <li>
+            <key>IdeoRole_Leader</key>
+            <value>
+              <li>BEP_NobleCape</li>
+            </value>
+          </li>
+        </roleApparels>
+      </li>
+    </modExtensions>
   </FactionDef>
 
   <FactionDef ParentName="FactionBase">
@@ -154,6 +166,10 @@
       <xenotypeChances>
       </xenotypeChances>
     </xenotypeSet>
+    <modExtensions>
+      <li Class="BEPRace_Core.BEPRace_FactionSetting">
+      </li>
+    </modExtensions>
   </FactionDef>
 
 </Defs>

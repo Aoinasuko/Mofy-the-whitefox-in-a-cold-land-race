@@ -36,7 +36,7 @@
       <Beauty>20</Beauty>
     </statBases>
     <size>(2,2)</size>
-    <designationCategory>BEPFT_Building</designationCategory>
+    <designationCategory>BEP_Building</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <surfaceType>Item</surfaceType>

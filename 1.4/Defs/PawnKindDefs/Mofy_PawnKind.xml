@@ -18,8 +18,15 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
+		<styleItemTags>
+			<li>
+				<tag>BEPRace</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
 		<apparelTags>
-			<li>Mofy_Apparel</li>
+			<li>BEP_Apparel</li>
 		</apparelTags>
 		<apparelMoney>0~1000</apparelMoney>
 		<minGenerationAge>6</minGenerationAge>
@@ -50,8 +57,15 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
+		<styleItemTags>
+			<li>
+				<tag>BEPRace</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
 		<apparelTags>
-			<li>Mofy_Apparel_Slave</li>
+			<li>BEP_Apparel_Slave</li>
 		</apparelTags>
 		<apparelMoney>0~1000</apparelMoney>
 		<minGenerationAge>10</minGenerationAge>
@@ -84,7 +98,7 @@
 		</backstoryFiltersOverride>
 		<styleItemTags>
 			<li>
-				<tag>Mofy</tag>
+				<tag>BEPRace</tag>
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
@@ -95,7 +109,7 @@
 			<li>Mofy_MidTier</li>
 		</weaponTags>
 		<apparelRequired>
-			<li>Mofy_SimpleArmor</li>
+			<li>BEP_SimpleArmor</li>
 		</apparelRequired>
 		<minGenerationAge>10</minGenerationAge>
 		<maxGenerationAge>15</maxGenerationAge>
@@ -127,7 +141,7 @@
 		</backstoryFiltersOverride>
 		<styleItemTags>
 			<li>
-				<tag>Mofy</tag>
+				<tag>BEPRace</tag>
 				<baseWeight>1</baseWeight>
 				<weightFactor>1</weightFactor>
 			</li>
@@ -137,8 +151,8 @@
 			<li>MedievalMeleeDecent</li>
 		</weaponTags>
 		<apparelRequired>
-			<li>Mofy_NobleCloth</li>
-			<li>Mofy_NobleCape</li>
+			<li>BEP_NobleCloth</li>
+			<li>BEP_NobleCape</li>
 		</apparelRequired>
 		<minGenerationAge>10</minGenerationAge>
 		<maxGenerationAge>15</maxGenerationAge>

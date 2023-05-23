@@ -55,7 +55,7 @@
     <neverMultiSelect>true</neverMultiSelect>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>BEPFT_Building</designationCategory>
+    <designationCategory>BEP_Building</designationCategory>
     <constructEffect>ConstructMetal</constructEffect>
     <clearBuildingArea>false</clearBuildingArea>
     <researchPrerequisites>
@@ -140,7 +140,7 @@
     <neverMultiSelect>true</neverMultiSelect>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>BEPFT_Building</designationCategory>
+    <designationCategory>BEP_Building</designationCategory>
     <constructEffect>ConstructMetal</constructEffect>
     <clearBuildingArea>false</clearBuildingArea>
     <researchPrerequisites>

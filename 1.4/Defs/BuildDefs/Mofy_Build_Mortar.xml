@@ -57,7 +57,7 @@
         <li>Artillery_MannedMortar</li>
       </buildingTags>
     </building>
-    <designationCategory>BEPFT_Building</designationCategory>
+    <designationCategory>BEP_Building</designationCategory>
     <uiIconPath>Mofy/Build/Mortar/Mortar_Icon</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
     <researchPrerequisites Inherit="False">

@@ -29,7 +29,7 @@ namespace Mofy_Race
 	public class Mofy_Config : ModSettings
 	{
 		// バージョン
-		public static int ver = 140;
+		public static int ver = 200;
 
 		// アップデートバージョン
 		public static int Updatever = 0;
