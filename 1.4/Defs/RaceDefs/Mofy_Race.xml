@@ -309,6 +309,8 @@
 				<apparel>
 					<!-- Apparel Graphics options go here -->
 				</apparel>
+				<skinShader>Cutout</skinShader>
+				<skinColor>(1,1,1,1)</skinColor>
 			</graphicPaths>
 			<relationSettings>
 				<relationChanceModifierLover>0</relationChanceModifierLover>
