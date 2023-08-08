@@ -361,6 +361,10 @@
 					<li>Head</li>
 					<li>BodyType</li>
 				</blackEndoCategories>
+				<xenotypeList>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Mofy_Mofy</li>
+				</xenotypeList>
+				<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
 			</raceRestriction>
 			<thoughtSettings>
 				<cannotReceiveThoughts>

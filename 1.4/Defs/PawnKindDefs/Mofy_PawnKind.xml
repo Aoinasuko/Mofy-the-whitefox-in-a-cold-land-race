@@ -5,7 +5,7 @@
 		<defName>Mofy_Visitor</defName>
 		<label>Mofy Visitor</label>
 		<isFighter>false</isFighter>
-		<combatPower>200</combatPower>
+		<combatPower>70</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>false</forceNormalGearQuality>
@@ -38,13 +38,19 @@
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>1~3</initialResistanceRange>
 		<defaultFactionType>Mofy_WildMofy</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Mofy_Mofy MayRequire="Ludeon.RimWorld.Biotech">999</Mofy_Mofy>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 	
 	<PawnKindDef>
 		<defName>Mofy_Slave</defName>
 		<label>Mofy Slave</label>
 		<isFighter>false</isFighter>
-		<combatPower>200</combatPower>
+		<combatPower>70</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>false</forceNormalGearQuality>
@@ -77,13 +83,19 @@
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>1~3</initialResistanceRange>
 		<defaultFactionType>Mofy_WildMofy</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Mofy_Mofy MayRequire="Ludeon.RimWorld.Biotech">999</Mofy_Mofy>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 	
 	<PawnKindDef>
 		<defName>Mofy_Kingdom_Fighter</defName>
 		<label>Mofy Fighter</label>
 		<isFighter>true</isFighter>
-		<combatPower>200</combatPower>
+		<combatPower>70</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<factionLeader>true</factionLeader>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
@@ -120,13 +132,19 @@
 		<initialWillRange>3~5</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<defaultFactionType>Mofy_Kingdom</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Mofy_Mofy MayRequire="Ludeon.RimWorld.Biotech">999</Mofy_Mofy>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 	
 	<PawnKindDef>
 		<defName>Mofy_Kingdom_Trader</defName>
 		<label>Mofy Trader</label>
 		<trader>true</trader>
-		<combatPower>200</combatPower>
+		<combatPower>70</combatPower>
 		<itemQuality>Normal</itemQuality>
 		<factionLeader>true</factionLeader>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
@@ -163,6 +181,12 @@
 		<initialWillRange>3~5</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<defaultFactionType>Mofy_Kingdom</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Mofy_Mofy MayRequire="Ludeon.RimWorld.Biotech">999</Mofy_Mofy>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 	
 </Defs>

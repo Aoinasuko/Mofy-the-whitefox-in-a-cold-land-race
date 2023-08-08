@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>Mofy_Mofy</defName>
+    <label>Mofy</label>
+    <description>It is a basic Mofy.</description>
+    <iconPath>BEPRaceCore/UI/Race/BEPRace</iconPath>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BEP_BrilliancePower</li>
+      <li>BEP_Brilliance_Construction</li>
+      <li>MaxTemp_SmallDecrease</li>
+      <li>AptitudePoor_Shooting</li>
+      <li>AptitudeRemarkable_Construction</li>
+      <li>AptitudePoor_Intellectual</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

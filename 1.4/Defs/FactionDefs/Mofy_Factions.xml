@@ -105,6 +105,7 @@
     <settlementTexturePath>Mofy/UI/Faction/icon</settlementTexturePath>
     <xenotypeSet>
       <xenotypeChances>
+        <Mofy_Mofy MayRequire="Ludeon.RimWorld.Biotech">1</Mofy_Mofy>
       </xenotypeChances>
     </xenotypeSet>
     <modExtensions>
@@ -164,6 +165,7 @@
     <settlementTexturePath>Mofy/UI/Faction/icon</settlementTexturePath>
     <xenotypeSet>
       <xenotypeChances>
+        <Mofy_Mofy MayRequire="Ludeon.RimWorld.Biotech">1</Mofy_Mofy>
       </xenotypeChances>
     </xenotypeSet>
     <modExtensions>
