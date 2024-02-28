@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_FreezeWish.label>凍える願い</Mofy_FreezeWish.label>
+  <Mofy_FreezeWish.description>フリーズコアから放たれた願いの力によって,敵対する生物全員の動きを少しの間大幅に抑制します.</Mofy_FreezeWish.description>
+
+  <Mofy_FreezeWish_Enemy.label>凍える願い</Mofy_FreezeWish_Enemy.label>
+  <Mofy_FreezeWish_Enemy.description>フリーズコアから放たれたモーフィー達が持っている特殊な力です. 一定時間ごとにランダムな敵に迫撃砲のようにフリーズボムを飛ばしてきます.</Mofy_FreezeWish_Enemy.description>
+
+  <Mofy_WOTI.label>願望の祝福(氷結)</Mofy_WOTI.label>
+  <Mofy_WOTI.description>願望の祝福を受け,能力が上昇した状態です.</Mofy_WOTI.description>
+
+</LanguageData>

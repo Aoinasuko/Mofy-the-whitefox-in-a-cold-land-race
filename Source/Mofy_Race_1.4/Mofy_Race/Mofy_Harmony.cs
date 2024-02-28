@@ -86,7 +86,7 @@ namespace Mofy_Race
                 if (Rand.Range(0, 3) == 0)
                 {
                     Messages.Message("Mofy.UI.Instruction".Translate(pawn), pawn, MessageTypeDefOf.PositiveEvent, false);
-                    __result = (QualityCategory)Mathf.Min((int)__result + 1, Enum.GetNames(typeof(QualityCategory)).Length);
+                    __result = (QualityCategory)Math.Min((int)__result + 1, Enum.GetNames(typeof(QualityCategory)).Length - 1);
                 }
             }
         }

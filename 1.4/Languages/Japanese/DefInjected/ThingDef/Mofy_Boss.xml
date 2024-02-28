@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Mofy_ReturnEternalColdWind.label>『再来する永遠の寒波』</Mofy_ReturnEternalColdWind.label>
+
+  <Mofy_FreezeCore.label>フリーズコア</Mofy_FreezeCore.label>
+  <Mofy_FreezeCore.description>ボスが時折召喚するパーツです. どうやらボスに力を供給しているようです. 破壊することもできますが,何らかの効果が発生するでしょう.</Mofy_FreezeCore.description>
+  <Mofy_FreezeCore.comps.1.BossDesc>-ボスを倒すためには一定期間耐えるしかありません,耐久が望めないのであれば手遅れになる前に拠点の放棄も視野に入れましょう.\n\n-このコアは放置する事もできますが,このコアが存在すればするほどボスのHPの減少速度が低下し,より長い時間耐えなければいけなくなります.\n\n-ボスが撃破されるかコアに攻撃を加えるとコアを破壊することができますが,破壊されたとき少しの間入植者全員の移動速度が大幅に低下し更にコアから特殊なバフを持ったモーフィが召喚されます. 特殊なバフを持ったモーフィは遠隔攻撃をしてくるため気をつけてください.</Mofy_FreezeCore.comps.1.BossDesc>
+
+</LanguageData>

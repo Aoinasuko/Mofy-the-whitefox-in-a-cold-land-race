@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Boss -->
+  <HediffDef>
+    <defName>Mofy_FreezeWish</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <label>Freeze Wish</label>
+    <description>The forces released by the destruction of the core are having an adverse effect. The speed of movement is greatly reduced for a short time.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>1800</min>
+          <max>1800</max>
+        </disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>0.1</MoveSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>Mofy_FreezeWish_Enemy</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <label>Freeze Wish</label>
+    <description>This is the power that Morphy has as it emerges from Core. Occasionally, it throws freezing bombs at the enemy.</description>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>60000</min>
+          <max>60000</max>
+        </disappearsAfterTicks>
+      </li>
+      <li Class="Mofy_Race.HediffCompProperties_ThrowBomb">
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ComfyTemperatureMin>-500</ComfyTemperatureMin>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>1.5</MoveSpeed>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <!-- Item -->
+  <HediffDef>
+    <defName>Mofy_WOTI</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8, 0.8, 1.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <label>Wish of the Ice</label>
+    <description>It is a state of increased capacity with benefits.</description>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+          <ComfyTemperatureMax>50</ComfyTemperatureMax>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>1.25</MoveSpeed>
+          <IncomingDamageFactor>0.8</IncomingDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Boss -->
+  <ThingDef>
+    <thingClass>Mofy_Race.RECW</thingClass>
+    <defName>Mofy_ReturnEternalColdWind</defName>
+    <label>Return Eternal ColdWind</label>
+    <graphicData>
+      <texPath>Mofy/Build/Boss/ReturnEternalColdWind</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <Mass>900</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>Mofy_Race.ReturnEternalColdWind</compClass>
+      </li>
+      <li Class="BEPRace_Core.CompProperties_BossHP">
+        <MaxHP>3000</MaxHP>
+        <StartHP>3000</StartHP>
+        <TexPath>Mofy/UI/BossHP/BossHP</TexPath>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(80,80,217,0)</glowColor>
+      </li>
+      <li Class="CompProperties_CausesGameCondition">
+        <conditionDef>Mofy_EternalColdWind</conditionDef>
+        <worldRange>10</worldRange>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Eternal Cold Wind -->
+  <GameConditionDef>
+    <defName>Mofy_EternalColdWind</defName>
+    <conditionClass>Mofy_Race.GameCondition_EternalCold</conditionClass>
+    <label>eternal coldwind</label>
+    <description>An eternal coldwind is a terrible disaster that once struck the Mofy's home planet. Temperatures will certainly drop below freezing. If you are in a subzero space, you will gradually freeze due to the sheer coldness.\n\nThis eternal coldwind will continue unless the root cause, the boss, is defeated.</description>
+    <letterText>The eternal coldwind has begun to blow. The cold is coming in, rivaling the icy seas.</letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <canBePermanent>true</canBePermanent>
+    <natural>false</natural>
+  </GameConditionDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Mofy_FreezeCore</defName>
+    <label>Freeze Core</label>
+    <description>The core is summoned from time to time. This seems to send power to the boss. The core itself does not seem to be robust, but if destroyed it will have some effect.</description>
+    <graphicData>
+      <texPath>Mofy/Build/Boss/FreezeCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.75</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>900</Mass>
+    </statBases>
+    <size>(1,1)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <surfaceType>Item</surfaceType>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>Mofy_Race.FreezeCore</compClass>
+      </li>
+      <li Class="BEPRace_Core.CompProperties_BossDesc">
+        <BossDesc>-The only way to defeat the boss is to endure for a certain period of time. If you cannot endure, consider abandoning your base before it is too late.\n\n-You can leave this core alone, but the more this core exists, the slower the boss's HP will decrease and the longer you will have to endure.\n\n-The core can be destroyed by destroying the boss or by attacking the core, but when the core is destroyed, the movement speed of all settlers will be significantly reduced for a short while and a Morphy with a special buff will be summoned from the core. Be careful of Morphy with special buffs, as he will attack remotely.</BossDesc>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(150,150,217,0)</glowColor>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="BEPRace_Core.Wishable">
+        <canWish>false</canWish>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+</Defs>

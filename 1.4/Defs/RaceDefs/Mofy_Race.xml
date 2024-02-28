@@ -309,6 +309,7 @@
 				<apparel>
 					<!-- Apparel Graphics options go here -->
 				</apparel>
+				<swaddle>BEPRaceCore/Race/Dummy/Dummy</swaddle>
 				<skinShader>Cutout</skinShader>
 				<skinColor>(1,1,1,1)</skinColor>
 			</graphicPaths>
@@ -331,6 +332,7 @@
 					<li>Mofy_Axe</li>
 					<li>Mofy_BlacksmithHammer</li>
 					<li>Mofy_Knife</li>
+					<li>Mofy_FreezeBombLauncher</li>
 				</weaponList>
 				<blackGeneList>
 					<li MayRequire="Ludeon.RimWorld.Biotech">Brow_Heavy</li>
@@ -638,6 +640,7 @@
 		<reproductive>false</reproductive>
 		<visible>false</visible>
 		<developmentalStage>Child</developmentalStage>
+		<workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeChild</workerClass>
 		<statFactors>
 			<MoveSpeed>0.75</MoveSpeed>
 		</statFactors>
@@ -652,6 +655,7 @@
 		<milkable>true</milkable>
 		<visible>false</visible>
 		<developmentalStage>Adult</developmentalStage>
+		<workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
 	</LifeStageDef>
 	
 	<AlienRace.RaceSettings>

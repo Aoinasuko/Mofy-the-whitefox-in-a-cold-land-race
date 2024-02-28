@@ -185,6 +185,77 @@
         <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
       </li>
     </comps>
+    <descriptionHyperlinks>
+      <HediffDef>Mofy_Freeze</HediffDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+  
+  <ThingDef ParentName="Mofy_BaseWeapon_Ranged">
+    <defName>Mofy_FreezeBombLauncher</defName>
+    <label>Mofy FreezeBomb Launcher</label>
+    <description>This FreezeBomb launcher is exclusively for Mofy and can send 3 FreezeBombs far away.</description>
+    <graphicData>
+      <texPath>Mofy/Thing/Weapon/FreezeBombLauncher</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Grenade</soundInteract>
+    <costList>
+      <Mofy_MofuHail>45</Mofy_MofuHail>
+      <Chemfuel>150</Chemfuel>
+      <Steel>100</Steel>
+      <Plasteel>50</Plasteel>
+    </costList>
+    <statBases>
+      <Mass>1.5</Mass>
+      <WorkToMake>24000</WorkToMake>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>Mofy_HighTier</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <recipeMaker>
+      <recipeUsers>
+        <li>Mofy_CraftTable</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Mofy_FreezeBombLauncher</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <range>30</range>
+        <warmupTime>4</warmupTime>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <noiseRadius>7</noiseRadius>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Mofy_FreezeBomb_Bomb</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.66</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+    <descriptionHyperlinks>
+      <HediffDef>Mofy_Freeze</HediffDef>
+    </descriptionHyperlinks>
   </ThingDef>
   
   <ThingDef ParentName="BaseFragGrenadeProjectile">

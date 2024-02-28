@@ -11,6 +11,9 @@
   <Mofy_FreezeBomb.description>短時間の間空間にとどまる凍結ガスを封じ込めた爆弾です.\n範囲内の生物を素早く凍らせます.\nただし,メカノイドには効果が薄いです.</Mofy_FreezeBomb.description>
   <Mofy_FreezeBomb.verbs.0.label>爆弾を投げる</Mofy_FreezeBomb.verbs.0.label>
 
+  <Mofy_FreezeBombLauncher.label>Mofy 冷凍爆弾ランチャー</Mofy_FreezeBombLauncher.label>
+  <Mofy_FreezeBombLauncher.description>モフィー専用の凍結爆弾を3つ投射するランチャーです.</Mofy_FreezeBombLauncher.description>
+
   <Mofy_FreezeBomb_Bomb.label>Mofy 冷凍爆弾</Mofy_FreezeBomb_Bomb.label>
   <Mofy_FreezeGas.label>凍結ガス</Mofy_FreezeGas.label>
 

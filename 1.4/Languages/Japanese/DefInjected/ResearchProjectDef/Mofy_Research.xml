@@ -22,6 +22,9 @@
   <Mofy_FreezeBomb.label>凍結爆弾</Mofy_FreezeBomb.label>
   <Mofy_FreezeBomb.description>超低温のガスを撒き,範囲内の生物を凍らせる凍結爆弾を作成できるようになります.</Mofy_FreezeBomb.description>
 
+  <Mofy_FreezeBombLauncher.label>フリーズボムランチャー</Mofy_FreezeBombLauncher.label>
+  <Mofy_FreezeBombLauncher.description>モフィー専用の凍結爆弾を遠くに飛ばすことのできるランチャーを作成できるようになります.</Mofy_FreezeBombLauncher.description>
+
   <Mofy_WallAttachment.label>ウォールアタッチメント</Mofy_WallAttachment.label>
   <Mofy_WallAttachment.description>壁や床に取り付けて電力を通すことで効果を発揮する防衛用のアタッチメントを作成できるようになります.</Mofy_WallAttachment.description>
 

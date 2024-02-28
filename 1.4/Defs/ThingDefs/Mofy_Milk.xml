@@ -34,6 +34,9 @@
     <thingCategories>
       <li>AnimalProductRaw</li>
     </thingCategories>
+    <descriptionHyperlinks>
+      <HediffDef>Mofy_MilkHediff</HediffDef>
+    </descriptionHyperlinks>
   </ThingDef>
   
   <ThingDef ParentName="DrugBase">
@@ -47,6 +50,7 @@
       <HediffDef>AlcoholAddiction</HediffDef>
       <HediffDef>Cirrhosis</HediffDef>
       <HediffDef>ChemicalDamageModerate</HediffDef>
+      <HediffDef>Mofy_MilkHediff</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Mofy/Thing/Milkcocktail</texPath>

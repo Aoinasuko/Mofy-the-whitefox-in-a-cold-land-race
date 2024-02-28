@@ -54,6 +54,9 @@
     <researchPrerequisites>
       <li>Mofy_BlacksmithInstruction</li>
     </researchPrerequisites>
+    <descriptionHyperlinks>
+      <HediffDef>Mofy_BlacksmithInstruction</HediffDef>
+    </descriptionHyperlinks>
   </ThingDef>
 
 </Defs>

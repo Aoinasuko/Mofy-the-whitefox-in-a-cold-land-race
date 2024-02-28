@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Boss -->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Mofy_EPK_Freeze</defName>
+    <label>Mofy Freeze EggplantKey</label>
+    <description>This is the "key" that generates the ordeal, a piece of technology gifted from far in the future. Use it to cause a boss to appear in the vicinity.\n\n&lt;color=#B1FBFF&gt;"Return Eternal ColdWind."&lt;/color&gt;</description>
+    <techLevel>Archotech</techLevel>
+    <tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Mofy/Thing/Boss/EPK_Freeze</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <costList>
+      <Mofy_MofuHail>100</Mofy_MofuHail>
+      <Mofy_MofuStone>100</Mofy_MofuStone>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smelt</effectWorking>
+      <soundWorking>Recipe_MakeBow</soundWorking>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>Mofy_CraftTable</li>
+      </recipeUsers>
+      <researchPrerequisite>Mofy_Knowledge</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>3500</MarketValue>
+      <Mass>1</Mass>
+      <WorkToMake>36000</WorkToMake>
+    </statBases>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Activate</useLabel>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>BEPRace_Core.BEPRace_CompTargetable_Self</compClass>
+      </li>
+      <li Class="BEPRace_Core.CompProperties_SummonBoss">
+        <SummonThing>Mofy_ReturnEternalColdWind</SummonThing>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>Mofy_WK_Freeze</defName>
+    <label>Mofy Wishkey(Freeze)</label>
+    <description>A "reward for experimental data" given to those who have passed the ordeal. It will give you power when you use it.\n\n&lt;color=#B1FBFF&gt;"I hope you now know a little of the sorrow that Mofy and his friends once experienced...?"&lt;/color&gt;</description>
+    <techLevel>Archotech</techLevel>
+    <tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Mofy/Thing/Boss/WK_Freeze</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>7500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Activate</useLabel>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>BEPRace_Core.BEPRace_CompTargetable_Self</compClass>
+      </li>
+      <li Class="BEPRace_Core.CompProperties_GetBuff">
+        <GetHediff>Mofy_WOTI</GetHediff>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf">
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="BEPRace_Core.Wishable">
+        <canWish>false</canWish>
+      </li>
+    </modExtensions>
+    <descriptionHyperlinks>
+      <HediffDef>Mofy_WOTI</HediffDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+  
+</Defs>
