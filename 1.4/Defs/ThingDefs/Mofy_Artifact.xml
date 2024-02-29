@@ -33,6 +33,7 @@
         <li>Mofy_CraftTable</li>
       </recipeUsers>
       <researchPrerequisite>Mofy_Knowledge</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     </recipeMaker>
     <statBases>
       <MarketValue>3500</MarketValue>

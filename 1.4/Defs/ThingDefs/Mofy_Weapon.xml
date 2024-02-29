@@ -43,7 +43,7 @@
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Smith</soundWorking>
-      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
     </recipeMaker>
     <weaponClasses>
       <li>Ranged</li>
