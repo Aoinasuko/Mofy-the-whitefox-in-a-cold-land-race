@@ -3,10 +3,10 @@
 
   <Mofy_EPK_Freeze.label>Mofy 氷結の茄子の鍵</Mofy_EPK_Freeze.label>
   <Mofy_EPK_Freeze.description>使用することで試練を発生させる鍵です.\n\nなぜ特定の混合物からこのような物体が作れるのかについては全く解明されていません.\n\n&lt;color=#B1FBFF&gt;"「永遠の寒波」が再来する."&lt;/color&gt;</Mofy_EPK_Freeze.description>
-  <Mofy_EPK_Freeze.comps.0.CompUsable.useLabel>使用する</Mofy_EPK_Freeze.comps.0.CompUsable.useLabel>
+  <Mofy_EPK_Freeze.comps.CompUsable.useLabel>{0_label}を使用する</Mofy_EPK_Freeze.comps.CompUsable.useLabel>
 
   <Mofy_WK_Freeze.label>Mofy 願望の鍵(氷結)</Mofy_WK_Freeze.label>
   <Mofy_WK_Freeze.description>試練を超えた者に贈られる"実験データのお礼"です. 使用すると力を得ることができるでしょう.\n\n&lt;color=#B1FBFF&gt;"かつてモフィー達に訪れた悲劇を少しは知れたかナス..?"&lt;/color&gt;</Mofy_WK_Freeze.description>
-  <Mofy_WK_Freeze.comps.0.CompUsable.useLabel>使用する</Mofy_WK_Freeze.comps.0.CompUsable.useLabel>
+  <Mofy_WK_Freeze.comps.CompUsable.useLabel>{0_label}を使用する</Mofy_WK_Freeze.comps.CompUsable.useLabel>
 
 </LanguageData>
